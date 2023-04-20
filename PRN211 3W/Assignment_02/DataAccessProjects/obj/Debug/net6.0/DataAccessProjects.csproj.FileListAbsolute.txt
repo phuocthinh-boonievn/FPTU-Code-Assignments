@@ -1,0 +1,15 @@
+C:\Users\PC\Desktop\PRN211_3W\Code and Assignment\Ass02Solution_PRN211_3W_NguyenPhanPhuocThinh\DataAccessProjects\bin\Debug\net6.0\DataAccessProjects.deps.json
+C:\Users\PC\Desktop\PRN211_3W\Code and Assignment\Ass02Solution_PRN211_3W_NguyenPhanPhuocThinh\DataAccessProjects\bin\Debug\net6.0\DataAccessProjects.dll
+C:\Users\PC\Desktop\PRN211_3W\Code and Assignment\Ass02Solution_PRN211_3W_NguyenPhanPhuocThinh\DataAccessProjects\bin\Debug\net6.0\DataAccessProjects.pdb
+C:\Users\PC\Desktop\PRN211_3W\Code and Assignment\Ass02Solution_PRN211_3W_NguyenPhanPhuocThinh\DataAccessProjects\bin\Debug\net6.0\BusinessObjects.dll
+C:\Users\PC\Desktop\PRN211_3W\Code and Assignment\Ass02Solution_PRN211_3W_NguyenPhanPhuocThinh\DataAccessProjects\bin\Debug\net6.0\BusinessObjects.pdb
+C:\Users\PC\Desktop\PRN211_3W\Code and Assignment\Ass02Solution_PRN211_3W_NguyenPhanPhuocThinh\DataAccessProjects\obj\Debug\net6.0\DataAccessProjects.csproj.AssemblyReference.cache
+C:\Users\PC\Desktop\PRN211_3W\Code and Assignment\Ass02Solution_PRN211_3W_NguyenPhanPhuocThinh\DataAccessProjects\obj\Debug\net6.0\DataAccessProjects.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\Desktop\PRN211_3W\Code and Assignment\Ass02Solution_PRN211_3W_NguyenPhanPhuocThinh\DataAccessProjects\obj\Debug\net6.0\DataAccessProjects.AssemblyInfoInputs.cache
+C:\Users\PC\Desktop\PRN211_3W\Code and Assignment\Ass02Solution_PRN211_3W_NguyenPhanPhuocThinh\DataAccessProjects\obj\Debug\net6.0\DataAccessProjects.AssemblyInfo.cs
+C:\Users\PC\Desktop\PRN211_3W\Code and Assignment\Ass02Solution_PRN211_3W_NguyenPhanPhuocThinh\DataAccessProjects\obj\Debug\net6.0\DataAccessProjects.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\PRN211_3W\Code and Assignment\Ass02Solution_PRN211_3W_NguyenPhanPhuocThinh\DataAccessProjects\obj\Debug\net6.0\DataAccessProjects.csproj.CopyComplete
+C:\Users\PC\Desktop\PRN211_3W\Code and Assignment\Ass02Solution_PRN211_3W_NguyenPhanPhuocThinh\DataAccessProjects\obj\Debug\net6.0\DataAccessProjects.dll
+C:\Users\PC\Desktop\PRN211_3W\Code and Assignment\Ass02Solution_PRN211_3W_NguyenPhanPhuocThinh\DataAccessProjects\obj\Debug\net6.0\refint\DataAccessProjects.dll
+C:\Users\PC\Desktop\PRN211_3W\Code and Assignment\Ass02Solution_PRN211_3W_NguyenPhanPhuocThinh\DataAccessProjects\obj\Debug\net6.0\DataAccessProjects.pdb
+C:\Users\PC\Desktop\PRN211_3W\Code and Assignment\Ass02Solution_PRN211_3W_NguyenPhanPhuocThinh\DataAccessProjects\obj\Debug\net6.0\ref\DataAccessProjects.dll
