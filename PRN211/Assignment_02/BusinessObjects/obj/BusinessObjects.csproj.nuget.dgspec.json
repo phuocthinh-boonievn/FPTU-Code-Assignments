@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\PEATEA\\Desktop\\FPT Course\\PRN211 3W\\Code And Assignment\\Ass02Solution_PRN211_3W_NguyenPhanPhuocThinh\\BusinessObjects\\BusinessObjects.csproj": {}
+    "C:\\Users\\PEATEA\\Desktop\\FPTU Code\\FPTU-Code-Assignments\\PRN211\\Assignment_02\\BusinessObjects\\BusinessObjects.csproj": {}
   },
   "projects": {
-    "C:\\Users\\PEATEA\\Desktop\\FPT Course\\PRN211 3W\\Code And Assignment\\Ass02Solution_PRN211_3W_NguyenPhanPhuocThinh\\BusinessObjects\\BusinessObjects.csproj": {
+    "C:\\Users\\PEATEA\\Desktop\\FPTU Code\\FPTU-Code-Assignments\\PRN211\\Assignment_02\\BusinessObjects\\BusinessObjects.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\PEATEA\\Desktop\\FPT Course\\PRN211 3W\\Code And Assignment\\Ass02Solution_PRN211_3W_NguyenPhanPhuocThinh\\BusinessObjects\\BusinessObjects.csproj",
+        "projectUniqueName": "C:\\Users\\PEATEA\\Desktop\\FPTU Code\\FPTU-Code-Assignments\\PRN211\\Assignment_02\\BusinessObjects\\BusinessObjects.csproj",
         "projectName": "BusinessObjects",
-        "projectPath": "C:\\Users\\PEATEA\\Desktop\\FPT Course\\PRN211 3W\\Code And Assignment\\Ass02Solution_PRN211_3W_NguyenPhanPhuocThinh\\BusinessObjects\\BusinessObjects.csproj",
+        "projectPath": "C:\\Users\\PEATEA\\Desktop\\FPTU Code\\FPTU-Code-Assignments\\PRN211\\Assignment_02\\BusinessObjects\\BusinessObjects.csproj",
         "packagesPath": "C:\\Users\\PEATEA\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\PEATEA\\Desktop\\FPT Course\\PRN211 3W\\Code And Assignment\\Ass02Solution_PRN211_3W_NguyenPhanPhuocThinh\\BusinessObjects\\obj\\",
+        "outputPath": "C:\\Users\\PEATEA\\Desktop\\FPTU Code\\FPTU-Code-Assignments\\PRN211\\Assignment_02\\BusinessObjects\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\My Developer Tools\\Visual Studio\\Shared\\NuGetPackages"

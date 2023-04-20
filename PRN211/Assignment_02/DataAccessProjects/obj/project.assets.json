@@ -2382,11 +2382,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\PEATEA\\Desktop\\FPT Course\\PRN211 3W\\Code And Assignment\\Ass02Solution_PRN211_3W_NguyenPhanPhuocThinh\\DataAccessProjects\\DataAccessObjects.csproj",
+      "projectUniqueName": "C:\\Users\\PEATEA\\Desktop\\FPTU Code\\FPTU-Code-Assignments\\PRN211\\Assignment_02\\DataAccessProjects\\DataAccessObjects.csproj",
       "projectName": "DataAccessObjects",
-      "projectPath": "C:\\Users\\PEATEA\\Desktop\\FPT Course\\PRN211 3W\\Code And Assignment\\Ass02Solution_PRN211_3W_NguyenPhanPhuocThinh\\DataAccessProjects\\DataAccessObjects.csproj",
+      "projectPath": "C:\\Users\\PEATEA\\Desktop\\FPTU Code\\FPTU-Code-Assignments\\PRN211\\Assignment_02\\DataAccessProjects\\DataAccessObjects.csproj",
       "packagesPath": "C:\\Users\\PEATEA\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\PEATEA\\Desktop\\FPT Course\\PRN211 3W\\Code And Assignment\\Ass02Solution_PRN211_3W_NguyenPhanPhuocThinh\\DataAccessProjects\\obj\\",
+      "outputPath": "C:\\Users\\PEATEA\\Desktop\\FPTU Code\\FPTU-Code-Assignments\\PRN211\\Assignment_02\\DataAccessProjects\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\My Developer Tools\\Visual Studio\\Shared\\NuGetPackages"
@@ -2407,8 +2407,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\PEATEA\\Desktop\\FPT Course\\PRN211 3W\\Code And Assignment\\Ass02Solution_PRN211_3W_NguyenPhanPhuocThinh\\BusinessObjects\\BusinessObjects.csproj": {
-              "projectPath": "C:\\Users\\PEATEA\\Desktop\\FPT Course\\PRN211 3W\\Code And Assignment\\Ass02Solution_PRN211_3W_NguyenPhanPhuocThinh\\BusinessObjects\\BusinessObjects.csproj"
+            "C:\\Users\\PEATEA\\Desktop\\FPTU Code\\FPTU-Code-Assignments\\PRN211\\Assignment_02\\BusinessObjects\\BusinessObjects.csproj": {
+              "projectPath": "C:\\Users\\PEATEA\\Desktop\\FPTU Code\\FPTU-Code-Assignments\\PRN211\\Assignment_02\\BusinessObjects\\BusinessObjects.csproj"
             }
           }
         }

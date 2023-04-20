@@ -16,6 +16,7 @@ namespace SaleManagementWinApp
         public bool isAdmin { get; set; }
         public bool addOrUpdate;
         IMemberRepository MemberRepository = new MemberRepository();
+        IProductRepository ProductRepository = new ProductRepository();
 
         public frmMain()
         {
@@ -49,7 +50,11 @@ namespace SaleManagementWinApp
         }
         private void manageProductToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmProductManagement frmProduct = new frmProductManagement();
+            lblWelcome.SendToBack();
+            frmProductManagement frmProduct = new frmProductManagement
+            {
+                productRepository = this.ProductRepository  
+            };
 
             frmProduct.MdiParent = this;
             frmProduct.WindowState = FormWindowState.Maximized;
@@ -59,6 +64,7 @@ namespace SaleManagementWinApp
 
         private void manageOrderToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            lblWelcome.SendToBack();
             frmOrderManagement frmOrder = new frmOrderManagement();
 
             frmOrder.MdiParent = this;

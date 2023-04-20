@@ -15,9 +15,9 @@ namespace SaleManagementWinApp
 {
     public partial class frmMemberDetail : Form
     {
-        public bool addOrUpdate { get; set; }
-        public Member MemberDetail { get; set; }
-        public IMemberRepository memberRepository { get; set; }
+        public bool AddOrUpdate { get; set; }
+        public Member ?MemberDetail { get; set; }
+        public IMemberRepository ?memberRepository { get; set; }
         public frmMemberDetail()
         {
             InitializeComponent();
@@ -25,7 +25,7 @@ namespace SaleManagementWinApp
 
         private void frmMemberDetail_Load(object sender, EventArgs e)
         {
-            if (addOrUpdate)
+            if (AddOrUpdate)
             {
                 btnSave.Text = "Add member";
                 btnSave.Tag = "Add member".ToLower();
@@ -53,7 +53,7 @@ namespace SaleManagementWinApp
         private void btnSave_Click(object sender, EventArgs e)
         {
            
-            if (addOrUpdate)
+            if (AddOrUpdate)
             {
                 Member member = new Member()
                 {

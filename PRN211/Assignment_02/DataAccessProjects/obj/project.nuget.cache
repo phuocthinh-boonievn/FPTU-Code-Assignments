@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "yn2iTMRc3DMcBHgYZxA983Md2FJ5bXlpYiNjRo0uT7olyKkSHbmmvUHsmQb3sbrRt6wWngb2VtMnB8xB24R8yA==",
+  "dgSpecHash": "uqpaoMFrLG+xghdxOL12vgCrUPxfskkkl43/5GYhmCnwkqENS57r3SfcYjvYgXbrHTSGkN4hKhQMVB1NMV0Z0g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\PEATEA\\Desktop\\FPT Course\\PRN211 3W\\Code And Assignment\\Ass02Solution_PRN211_3W_NguyenPhanPhuocThinh\\DataAccessProjects\\DataAccessObjects.csproj",
+  "projectFilePath": "C:\\Users\\PEATEA\\Desktop\\FPTU Code\\FPTU-Code-Assignments\\PRN211\\Assignment_02\\DataAccessProjects\\DataAccessObjects.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\PEATEA\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\PEATEA\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",

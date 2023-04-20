@@ -2419,11 +2419,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\PEATEA\\Desktop\\FPT Course\\PRN211 3W\\Code And Assignment\\Ass02Solution_PRN211_3W_NguyenPhanPhuocThinh\\SaleManagementWinApp\\SaleManagementWinApp.csproj",
+      "projectUniqueName": "C:\\Users\\PEATEA\\Desktop\\FPTU Code\\FPTU-Code-Assignments\\PRN211\\Assignment_02\\SaleManagementWinApp\\SaleManagementWinApp.csproj",
       "projectName": "SaleManagementWinApp",
-      "projectPath": "C:\\Users\\PEATEA\\Desktop\\FPT Course\\PRN211 3W\\Code And Assignment\\Ass02Solution_PRN211_3W_NguyenPhanPhuocThinh\\SaleManagementWinApp\\SaleManagementWinApp.csproj",
+      "projectPath": "C:\\Users\\PEATEA\\Desktop\\FPTU Code\\FPTU-Code-Assignments\\PRN211\\Assignment_02\\SaleManagementWinApp\\SaleManagementWinApp.csproj",
       "packagesPath": "C:\\Users\\PEATEA\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\PEATEA\\Desktop\\FPT Course\\PRN211 3W\\Code And Assignment\\Ass02Solution_PRN211_3W_NguyenPhanPhuocThinh\\SaleManagementWinApp\\obj\\",
+      "outputPath": "C:\\Users\\PEATEA\\Desktop\\FPTU Code\\FPTU-Code-Assignments\\PRN211\\Assignment_02\\SaleManagementWinApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\My Developer Tools\\Visual Studio\\Shared\\NuGetPackages"
@@ -2444,8 +2444,8 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "projectReferences": {
-            "C:\\Users\\PEATEA\\Desktop\\FPT Course\\PRN211 3W\\Code And Assignment\\Ass02Solution_PRN211_3W_NguyenPhanPhuocThinh\\Repositories\\Repositories.csproj": {
-              "projectPath": "C:\\Users\\PEATEA\\Desktop\\FPT Course\\PRN211 3W\\Code And Assignment\\Ass02Solution_PRN211_3W_NguyenPhanPhuocThinh\\Repositories\\Repositories.csproj"
+            "C:\\Users\\PEATEA\\Desktop\\FPTU Code\\FPTU-Code-Assignments\\PRN211\\Assignment_02\\Repositories\\Repositories.csproj": {
+              "projectPath": "C:\\Users\\PEATEA\\Desktop\\FPTU Code\\FPTU-Code-Assignments\\PRN211\\Assignment_02\\Repositories\\Repositories.csproj"
             }
           }
         }

@@ -15,3 +15,11 @@ C:\Users\PC\Desktop\PRN211_3W\Code and Assignment\Ass02Solution_PRN211_3W_Nguyen
 C:\Users\PC\Desktop\PRN211_3W\Code and Assignment\Ass02Solution_PRN211_3W_NguyenPhanPhuocThinh\Repositories\obj\Debug\net6.0\ref\Repositories.dll
 C:\Users\PC\Desktop\PRN211_3W\Code and Assignment\Ass02Solution_PRN211_3W_NguyenPhanPhuocThinh\Repositories\bin\Debug\net6.0\DataAccessObjects.dll
 C:\Users\PC\Desktop\PRN211_3W\Code and Assignment\Ass02Solution_PRN211_3W_NguyenPhanPhuocThinh\Repositories\bin\Debug\net6.0\DataAccessObjects.pdb
+C:\Users\PEATEA\Desktop\FPTU Code\FPTU-Code-Assignments\PRN211\Assignment_02\Repositories\obj\Debug\net6.0\Repositories.csproj.AssemblyReference.cache
+C:\Users\PEATEA\Desktop\FPTU Code\FPTU-Code-Assignments\PRN211\Assignment_02\Repositories\obj\Debug\net6.0\Repositories.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PEATEA\Desktop\FPTU Code\FPTU-Code-Assignments\PRN211\Assignment_02\Repositories\obj\Debug\net6.0\Repositories.AssemblyInfoInputs.cache
+C:\Users\PEATEA\Desktop\FPTU Code\FPTU-Code-Assignments\PRN211\Assignment_02\Repositories\obj\Debug\net6.0\Repositories.AssemblyInfo.cs
+C:\Users\PEATEA\Desktop\FPTU Code\FPTU-Code-Assignments\PRN211\Assignment_02\Repositories\obj\Debug\net6.0\Repositories.csproj.CoreCompileInputs.cache
+C:\Users\PEATEA\Desktop\FPTU Code\FPTU-Code-Assignments\PRN211\Assignment_02\Repositories\obj\Debug\net6.0\Repositories.dll
+C:\Users\PEATEA\Desktop\FPTU Code\FPTU-Code-Assignments\PRN211\Assignment_02\Repositories\obj\Debug\net6.0\refint\Repositories.dll
+C:\Users\PEATEA\Desktop\FPTU Code\FPTU-Code-Assignments\PRN211\Assignment_02\Repositories\obj\Debug\net6.0\Repositories.pdb

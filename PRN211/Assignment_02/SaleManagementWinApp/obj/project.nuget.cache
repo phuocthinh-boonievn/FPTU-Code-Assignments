@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "y0rUt6iUa8iBMHLWWvyzE3QEaNIoenXqboYnl/MREE1MUTl8fAhGzf5aVuytqkcxJG65INpPGl5TPla3J19LnA==",
+  "dgSpecHash": "4bS21jGuO1FmAi9lXizHSrHrQdNnVa1F/5aJBbcgqumTT2jNfoPleOfYLBibCZUcrXz5U8qOdZmZm8SsbD39Ww==",
   "success": true,
-  "projectFilePath": "C:\\Users\\PEATEA\\Desktop\\FPT Course\\PRN211 3W\\Code And Assignment\\Ass02Solution_PRN211_3W_NguyenPhanPhuocThinh\\SaleManagementWinApp\\SaleManagementWinApp.csproj",
+  "projectFilePath": "C:\\Users\\PEATEA\\Desktop\\FPTU Code\\FPTU-Code-Assignments\\PRN211\\Assignment_02\\SaleManagementWinApp\\SaleManagementWinApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\PEATEA\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\PEATEA\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",

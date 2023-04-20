@@ -17,13 +17,13 @@ namespace SaleManagementWinApp
         }
         private void LoadMembersToGrid()
         {
-            var projects = memberRepository.GetMembersList();
+            var members = memberRepository.GetMembersList();
             try
             {
                 ClearBindings();
 
                 source = new BindingSource();
-                source.DataSource = projects;
+                source.DataSource = members;
 
 
                 txtMemberId.DataBindings.Add("Text", source, "MemberId");
@@ -38,7 +38,7 @@ namespace SaleManagementWinApp
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message, "Load project list error");
+                MessageBox.Show(ex.Message, "Load member list error");
             }
         }
         private void ClearBindings()
@@ -69,7 +69,7 @@ namespace SaleManagementWinApp
             frmMemberDetail detailForm = new frmMemberDetail()
             {
                 memberRepository = memberRepository,
-                addOrUpdate = true
+                AddOrUpdate = true
             };
             detailForm.ShowDialog();
             source.Position = source.Count - 1;
@@ -86,7 +86,7 @@ namespace SaleManagementWinApp
             frmMemberDetail detailForm = new frmMemberDetail
             {
                 memberRepository = this.memberRepository,
-                addOrUpdate = false,
+                AddOrUpdate = false,
                 MemberDetail = selected
             };
             detailForm.Show();
@@ -101,7 +101,7 @@ namespace SaleManagementWinApp
             Member selected = (Member)row.DataBoundItem;
             try
             {
-                if (MessageBox.Show($"Are you sure? This member will be deleted:\n" + $"Member ID: {selected.MemberId}\n" + $"Email: {selected.Email}\n", "Delete project", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                if (MessageBox.Show($"Are you sure? This member will be deleted:\n" + $"Member ID: {selected.MemberId}\n" + $"Email: {selected.Email}\n", "Delete product", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
                     //var project = GetProjectObject();
                     memberRepository.Delete(selected.MemberId);

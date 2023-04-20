@@ -129,6 +129,7 @@
             btnSearch.TabIndex = 22;
             btnSearch.Text = "Search";
             btnSearch.UseVisualStyleBackColor = true;
+            btnSearch.Click += btnSearch_Click;
             // 
             // txtSearchValue
             // 
@@ -157,6 +158,7 @@
             btnDelete.TabIndex = 5;
             btnDelete.Text = "Delete";
             btnDelete.UseVisualStyleBackColor = true;
+            btnDelete.Click += btnDelete_Click;
             // 
             // btnUpdate
             // 
@@ -166,6 +168,7 @@
             btnUpdate.TabIndex = 4;
             btnUpdate.Text = "Update";
             btnUpdate.UseVisualStyleBackColor = true;
+            btnUpdate.Click += btnUpdate_Click;
             // 
             // btnCreate
             // 
@@ -175,6 +178,7 @@
             btnCreate.TabIndex = 3;
             btnCreate.Text = "Create";
             btnCreate.UseVisualStyleBackColor = true;
+            btnCreate.Click += btnCreate_Click;
             // 
             // dgvProducts
             // 
@@ -335,8 +339,6 @@
         private TextBox txtSearchValue;
         private GroupBox groupBox1;
         private Button btnDelete;
-        internal Button btnUpdate;
-        internal Button btnCreate;
         private DataGridView dgvProducts;
         private Label label5;
         private TextBox txtCompanyName;
@@ -351,5 +353,7 @@
         private Label label3;
         private Label label2;
         private Label label1;
+        public Button btnUpdate;
+        public Button btnCreate;
     }
 }
