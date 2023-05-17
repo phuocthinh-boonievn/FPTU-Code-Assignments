@@ -3,16 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Management;
+package Utils;
 
-import DAO.MyValidation;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-/**
- *
- * @author Tran Phong <phongntse150974@fpt.edu.vn>
- */
+
 public class Menu extends ArrayList<String>{
     public int getUserChoice() {
         Scanner sc = new Scanner(System.in);
@@ -22,7 +18,7 @@ public class Menu extends ArrayList<String>{
             System.out.println("----------------------");
             System.out.println("Menu to choose:");
             for (int i = 0; i < this.size(); i++) {
-                System.out.println((i+1) + ". " + this.get(i) + ".");
+                System.out.println(this.get(i) + ".");
             }
             System.out.print("\tChoose an option: ");
             try {

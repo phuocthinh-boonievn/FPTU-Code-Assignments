@@ -6,8 +6,8 @@ package Model;
 
 /**
  *
- * @author PEATEA
+ * @author PC
  */
-public class Patient {
+public class Nurse {
     
 }

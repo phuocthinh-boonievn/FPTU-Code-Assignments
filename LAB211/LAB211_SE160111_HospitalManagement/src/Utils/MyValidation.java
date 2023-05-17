@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package DAO;
+package Utils;
 
 import java.math.BigInteger;
 import java.nio.charset.StandardCharsets;
@@ -13,10 +13,6 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Scanner;
 
-/**
- *
- * @author Tran Phong <phongntse150974@fpt.edu.vn>
- */
 public class MyValidation {
     ////////////////// STRING
 
