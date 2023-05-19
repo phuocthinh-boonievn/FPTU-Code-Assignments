@@ -4,14 +4,21 @@
  */
 package Management;
 
+import Model.Patient;
+import Model.Nurse;
 import Utils.Menu;
-import Utils.SubMenu;
+import Utils.FileDAO;
 import java.util.Scanner;
+import java.util.HashMap;
 /**
  *
  * @author PC
  */
 public class HospitalManagement {
+    final static String FILE_PATIENT = "patient.dat";
+    final static String FILE_NURSE = "nurse.dat";
+    
+    
 
     /**
      * @param args the command line arguments
@@ -29,11 +36,13 @@ public class HospitalManagement {
         menu.add("  5. Add a patient");
         menu.add("  6. Display patients");
         menu.add("  7. Sort the patients list");
+        menu.add("C. Data management");
         menu.add("  8. Save data");
         menu.add("  9. Load data");
         menu.add("10 - Exit");
         
-        
+        HashMap<Integer, Patient> patients = new HashMap<>();
+        HashMap<Integer, Nurse> nurses = new HashMap<>();
         int choice = 0;
         boolean cont = true;
         do{
@@ -42,7 +51,11 @@ public class HospitalManagement {
                 case 1:
                     
                 case 2:
+                case 9:
                     
+                    FileDAO.display();
+
+                    break;
                 default:
                     Scanner scan = new Scanner(System.in);
                     System.out.println("Do yo really want to exit the application?");
