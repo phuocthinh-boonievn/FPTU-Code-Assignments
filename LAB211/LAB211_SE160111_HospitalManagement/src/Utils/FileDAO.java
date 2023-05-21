@@ -78,8 +78,6 @@ public class FileDAO {
     }
     
     public static void displayAllData(HashMap<Integer, Patient> patients, HashMap<Integer, Nurse> nurses) {
-
-
         // Display the loaded nurse data in a table
         System.out.println("NURSE DATA:");
         System.out.println("------------------------------------------------------------");
@@ -100,7 +98,7 @@ public class FileDAO {
                  "No","PatientID", "Name", "Age", "Gender", "Diagnosis", "Admission Date", "Discharge Date", "Nurse Assigned", "Address", "Phone");
         System.out.println("--------------------------------------------------------------------------------------------------------------------");
         for (Patient patient : patients.values()) {
-            System.out.printf("| %-3s |%-10s | %-15s | %-3s | %-5s | %-20s | %-15s | %-20s | %-20s | %-20s | %-15s |%n",
+            System.out.printf("| %-3s |%-11s | %-15s | %-3s | %-6s | %-20s | %-15s | %-20s | %-20s | %-20s | %-15s |%n",
                     patient.getId(),patient.getPatientID(), patient.getName(), patient.getAge(), patient.getGender(), 
                     patient.getDiagnosis(), patient.getAdmissionDate(), patient.getDischargeDate(),
                     patient.getNurseAssigned(), patient.getAddress(), patient.getPhone());

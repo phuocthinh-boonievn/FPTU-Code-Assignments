@@ -72,58 +72,15 @@ public class HospitalManagement {
                     FileDAO.displayAllData(patients, nurses);
                     break;
                 case 6:
-                    Scanner scanner = new Scanner(System.in);
-
-                    LocalDate startDate = null;
-                    LocalDate endDate = null;
-
-                    boolean validInput = false;
-
-                    while (!validInput) {
-                        try {
-                            System.out.print("Enter the start date (admission date): ");
-                            String startDateString = scanner.nextLine();
-                            startDate =  MyValidation.checkDate(startDateString);
-
-                            LocalDate year2000 = LocalDate.of(2000, 1, 1);
-                            if (startDate.isBefore(year2000)) {
-                                throw new IllegalArgumentException("Start date must be on or after January 1, 2000.");
-                            }
-
-                            validInput = true;
-                        } catch (DateTimeParseException e) {
-                            System.out.println("Invalid date format. Please enter the date in the format dd/MM/yyyy.");
-                        } catch (IllegalArgumentException e) {
-                            System.out.println(e.getMessage());
-                        }
-                    }
-
-                    validInput = false;
-
-                    while (!validInput) {
-                        try {
-                            System.out.print("Enter the end date (admission date): ");
-                            String endDateString = scanner.nextLine();
-                            endDate =  MyValidation.checkDate(endDateString);
-
-                            if (endDate.isBefore(startDate)) {
-                                throw new IllegalArgumentException("End date must not be before the start date.");
-                            }
-
-                            validInput = true;
-                        } catch (DateTimeParseException e) {
-                            System.out.println("Invalid date format. Please enter the date in the format dd/MM/yyyy.");
-                        } catch (IllegalArgumentException e) {
-                            System.out.println(e.getMessage());
-                        }
-                    }
-
-                    List<Patient> filteredPatients = PatientManager.filterPatientsByDateRange(patients, startDate, endDate);
-                    PatientManager.sortPatientsByAdmissionDate(filteredPatients);
-                    PatientManager.displayPatients(filteredPatients);
+                    HashMap<Integer, Patient> filteredPatients = PatientManager.filterPatientsByDateRange(patients);
+                    HashMap<Integer, Patient> admissionPatientsList = PatientManager.sortPatientsByAdmissionDate(filteredPatients);
+                    System.out.println("\nPATIENT LIST BY ADMISSION DATE:");
+                    PatientManager.displayPatients(admissionPatientsList);
                     break;
                 case 7:
-                    FileDAO.displayAllData(patients, nurses);
+                    HashMap<Integer, Patient> sortedPatientsList = PatientManager.getUserSortPreferences(patients);
+                    System.out.println("\nSORTED PATIENT LIST:");
+                    PatientManager.displayPatients(sortedPatientsList);
                     break;
                 case 8:
                     FileDAO.displayAllData(patients, nurses);
@@ -132,9 +89,10 @@ public class HospitalManagement {
                     FileDAO.displayAllData(patients, nurses);
                     break;
                 default:
-                    Scanner scan = new Scanner(System.in);
+                    System.out.println("\nPATIENT LIST:");
+                    Scanner sc = new Scanner(System.in);
                     System.out.println("Do yo really want to exit the application?");
-                    String input = scan.nextLine();
+                    String input = sc.nextLine();
                     if (input.equals("yes") || input.equals("y")) {
                         cont = false;
                         break;
