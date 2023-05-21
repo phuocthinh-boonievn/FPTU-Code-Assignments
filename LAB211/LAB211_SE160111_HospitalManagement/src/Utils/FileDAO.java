@@ -74,8 +74,8 @@ public class FileDAO {
         return nurses;
     }
     
-    public static void display() {
-        HashMap<Integer, Nurse> nurses = loadNurses("nurse.dat");
+    public static void loadAllData(HashMap<Integer, Patient> patients, HashMap<Integer, Nurse> nurses) {
+
 
         // Display the loaded nurse data in a table
         System.out.println("NURSE DATA:");
@@ -89,8 +89,6 @@ public class FileDAO {
                     nurse.getDepartment(), nurse.getSalary());
         }
         System.out.println("------------------------------------------------------------");
-
-        HashMap<Integer, Patient> patients = loadPatients("patient.dat");
 
         // Display the loaded patient data in a table
         System.out.println("\nPATIENT DATA:");

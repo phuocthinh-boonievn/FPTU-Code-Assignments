@@ -16,7 +16,7 @@ public class Menu extends ArrayList<String>{
         int choice = 0;
         do {
             System.out.println("----------------------");
-            System.out.println("Menu to choose:");
+            System.out.println("");
             for (int i = 0; i < this.size(); i++) {
                 System.out.println(this.get(i) + ".");
             }
@@ -24,12 +24,11 @@ public class Menu extends ArrayList<String>{
             try {
                 sc = new Scanner(System.in);
                 choice = sc.nextInt();
-                if (choice < 1 || choice > this.size())
+                if (choice < 1)
                     throw new Exception();
                 cont = false;
             } catch (Exception e) {
-                System.out.println("Please enter number between 1 and " + this.size() + "!");
-                cont = true;
+                System.out.println("Invalid input!");
                 MyValidation.getEnter("Press Enter to enter again...");
             }
         } while (cont);

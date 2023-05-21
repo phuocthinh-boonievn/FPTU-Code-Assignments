@@ -322,7 +322,7 @@ public class MyValidation {
         Scanner sc = new Scanner(System.in);
         System.out.print(message);
         do {
-            if (isEmptyString(sc.nextLine()))
+            if (isEmptyString(sc.nextLine()) || sc.next().equals(""))
                 return;
         } while (true);
     }

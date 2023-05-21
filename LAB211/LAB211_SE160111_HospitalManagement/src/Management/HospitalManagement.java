@@ -39,22 +39,41 @@ public class HospitalManagement {
         menu.add("C. Data management");
         menu.add("  8. Save data");
         menu.add("  9. Load data");
-        menu.add("10 - Exit");
+        menu.add("Others - Exit");
         
-        HashMap<Integer, Patient> patients = new HashMap<>();
-        HashMap<Integer, Nurse> nurses = new HashMap<>();
+        HashMap<Integer, Patient> patients = FileDAO.loadPatients(FILE_PATIENT);
+        HashMap<Integer, Nurse> nurses = FileDAO.loadNurses(FILE_NURSE);
         int choice = 0;
         boolean cont = true;
         do{
             choice = menu.getUserChoice();
             switch (choice) {
                 case 1:
-                    
+                    FileDAO.loadAllData(patients, nurses);
+                    break;
                 case 2:
+                    FileDAO.loadAllData(patients, nurses);
+                    break;
+                case 3:
+                    FileDAO.loadAllData(patients, nurses);
+                    break;
+                case 4:
+                    FileDAO.loadAllData(patients, nurses);
+                    break;
+                case 5:
+                    FileDAO.loadAllData(patients, nurses);
+                    break;
+                case 6:
+                    FileDAO.loadAllData(patients, nurses);
+                    break;
+                case 7:
+                    FileDAO.loadAllData(patients, nurses);
+                    break;
+                case 8:
+                    FileDAO.loadAllData(patients, nurses);
+                    break;
                 case 9:
-                    
-                    FileDAO.display();
-
+                    FileDAO.loadAllData(patients, nurses);
                     break;
                 default:
                     Scanner scan = new Scanner(System.in);
