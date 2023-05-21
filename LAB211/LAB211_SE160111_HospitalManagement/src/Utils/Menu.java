@@ -20,7 +20,7 @@ public class Menu extends ArrayList<String>{
             for (int i = 0; i < this.size(); i++) {
                 System.out.println(this.get(i) + ".");
             }
-            System.out.print("\tChoose an option: ");
+            System.out.print("Choose an option: ");
             try {
                 sc = new Scanner(System.in);
                 choice = sc.nextInt();

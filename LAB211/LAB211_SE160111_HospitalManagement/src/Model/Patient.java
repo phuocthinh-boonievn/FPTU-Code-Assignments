@@ -4,28 +4,39 @@
  */
 package Model;
 
+import java.time.LocalDate;
+
 /**
  *
  * @author PC
  */
 public class Patient extends Person{
+    private String patientID;
     private String diagnosis;
-    private String admissionDate;
-    private String dischargeDate;
+    private LocalDate admissionDate;
+    private LocalDate dischargeDate;
     private String nurseAssigned;
 
     public Patient(int id, String name, int age, String gender, String address, String phone,
-                   String diagnosis, String admissionDate, String dischargeDate, String nurseAssigned) 
+                   String patientID, String diagnosis, LocalDate admissionDate, LocalDate dischargeDate, String nurseAssigned) 
     {
         super(id, name, age, gender, address, phone);
+        this.patientID = patientID;
         this.diagnosis = diagnosis;
         this.admissionDate = admissionDate;
         this.dischargeDate = dischargeDate;
         this.nurseAssigned = nurseAssigned;
     }
 
-    // Getters and setters for the additional properties
+    public String getPatientID() {
+        return patientID;
+    }
 
+    public void setPatientID(String patientID) {
+        this.patientID = patientID;
+    }
+
+   
     public String getDiagnosis() {
         return diagnosis;
     }
@@ -34,19 +45,19 @@ public class Patient extends Person{
         this.diagnosis = diagnosis;
     }
 
-    public String getAdmissionDate() {
+    public LocalDate getAdmissionDate() {
         return admissionDate;
     }
 
-    public void setAdmissionDate(String admissionDate) {
+    public void setAdmissionDate(LocalDate admissionDate) {
         this.admissionDate = admissionDate;
     }
 
-    public String getDischargeDate() {
+    public LocalDate getDischargeDate() {
         return dischargeDate;
     }
 
-    public void setDischargeDate(String dischargeDate) {
+    public void setDischargeDate(LocalDate dischargeDate) {
         this.dischargeDate = dischargeDate;
     }
 

@@ -11,6 +11,8 @@ import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.Scanner;
 
 public class MyValidation {
@@ -22,6 +24,7 @@ public class MyValidation {
      * @param pattern pattern to compare
      * @return true if s matches the given pattern
      */
+    
     public static boolean checkString(String s, String pattern)
     {
         return s.matches(pattern);
@@ -159,6 +162,12 @@ public class MyValidation {
      * @param day the day
      * @return true if the given date is valid
      */
+    
+    public static LocalDate checkDate(String dateString) throws Exception {
+        DateTimeFormatter dateFormatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+        return LocalDate.parse(dateString.trim(), dateFormatter);
+    }
+    
     public static boolean isValidDate(int year, int month, int day)
     {
         return isValidDate(day + "/" + month + "/" + year, "dd/MM/yyyy") && (year < 2020 || (year == 2020 && month <= 9 && day <= 30)) ;

@@ -6,10 +6,16 @@ package Management;
 
 import Model.Patient;
 import Model.Nurse;
+import Management.PatientManager;
+import Management.NurseManager;
 import Utils.Menu;
 import Utils.FileDAO;
+import Utils.MyValidation;
+import java.time.LocalDate;
+import java.time.format.DateTimeParseException;
 import java.util.Scanner;
 import java.util.HashMap;
+import java.util.List;
 /**
  *
  * @author PC
@@ -23,7 +29,7 @@ public class HospitalManagement {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         
         // TODO code application logic here
         Menu menu = new Menu();
@@ -43,37 +49,87 @@ public class HospitalManagement {
         
         HashMap<Integer, Patient> patients = FileDAO.loadPatients(FILE_PATIENT);
         HashMap<Integer, Nurse> nurses = FileDAO.loadNurses(FILE_NURSE);
+        
+        
         int choice = 0;
         boolean cont = true;
         do{
             choice = menu.getUserChoice();
             switch (choice) {
                 case 1:
-                    FileDAO.loadAllData(patients, nurses);
+                    FileDAO.displayAllData(patients, nurses);
                     break;
                 case 2:
-                    FileDAO.loadAllData(patients, nurses);
+                    FileDAO.displayAllData(patients, nurses);
                     break;
                 case 3:
-                    FileDAO.loadAllData(patients, nurses);
+                    FileDAO.displayAllData(patients, nurses);
                     break;
                 case 4:
-                    FileDAO.loadAllData(patients, nurses);
+                    FileDAO.displayAllData(patients, nurses);
                     break;
                 case 5:
-                    FileDAO.loadAllData(patients, nurses);
+                    FileDAO.displayAllData(patients, nurses);
                     break;
                 case 6:
-                    FileDAO.loadAllData(patients, nurses);
+                    Scanner scanner = new Scanner(System.in);
+
+                    LocalDate startDate = null;
+                    LocalDate endDate = null;
+
+                    boolean validInput = false;
+
+                    while (!validInput) {
+                        try {
+                            System.out.print("Enter the start date (admission date): ");
+                            String startDateString = scanner.nextLine();
+                            startDate =  MyValidation.checkDate(startDateString);
+
+                            LocalDate year2000 = LocalDate.of(2000, 1, 1);
+                            if (startDate.isBefore(year2000)) {
+                                throw new IllegalArgumentException("Start date must be on or after January 1, 2000.");
+                            }
+
+                            validInput = true;
+                        } catch (DateTimeParseException e) {
+                            System.out.println("Invalid date format. Please enter the date in the format dd/MM/yyyy.");
+                        } catch (IllegalArgumentException e) {
+                            System.out.println(e.getMessage());
+                        }
+                    }
+
+                    validInput = false;
+
+                    while (!validInput) {
+                        try {
+                            System.out.print("Enter the end date (admission date): ");
+                            String endDateString = scanner.nextLine();
+                            endDate =  MyValidation.checkDate(endDateString);
+
+                            if (endDate.isBefore(startDate)) {
+                                throw new IllegalArgumentException("End date must not be before the start date.");
+                            }
+
+                            validInput = true;
+                        } catch (DateTimeParseException e) {
+                            System.out.println("Invalid date format. Please enter the date in the format dd/MM/yyyy.");
+                        } catch (IllegalArgumentException e) {
+                            System.out.println(e.getMessage());
+                        }
+                    }
+
+                    List<Patient> filteredPatients = PatientManager.filterPatientsByDateRange(patients, startDate, endDate);
+                    PatientManager.sortPatientsByAdmissionDate(filteredPatients);
+                    PatientManager.displayPatients(filteredPatients);
                     break;
                 case 7:
-                    FileDAO.loadAllData(patients, nurses);
+                    FileDAO.displayAllData(patients, nurses);
                     break;
                 case 8:
-                    FileDAO.loadAllData(patients, nurses);
+                    FileDAO.displayAllData(patients, nurses);
                     break;
                 case 9:
-                    FileDAO.loadAllData(patients, nurses);
+                    FileDAO.displayAllData(patients, nurses);
                     break;
                 default:
                     Scanner scan = new Scanner(System.in);
