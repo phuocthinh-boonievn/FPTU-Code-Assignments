@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Utils;
 
 import java.math.BigInteger;
@@ -386,10 +381,6 @@ public class MyValidation {
     
     public static boolean isPassword(String password) {
         return checkString(password, "([a-zA-Z0-9@$!%*#?&]){6,}");
-    }
-    
-    public static void main(String[] args) {
-        System.out.println(isUsername(" "));
     }
 }
 

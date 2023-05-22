@@ -32,7 +32,7 @@ public class PatientManager {
 
             System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------");
             System.out.printf("| %-3s | %-10s | %-15s | %-3s | %-5s | %-20s | %-15s | %-20s | %-20s | %-20s | %-15s |%n",
-                    "No", "PatientID", "Name", "Age", "Gender", "Diagnosis", "Admission Date", "Discharge Date", "Nurse Assigned", "Address", "Phone");
+                    "No.", "PatientID", "Name", "Age", "Gender", "Diagnosis", "Admission Date", "Discharge Date", "Nurse Assigned", "Address", "Phone");
             System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------");
             for (Patient patient : patients.values()) {
                 String admissionDate = patient.getAdmissionDate().format(dateFormatter);
@@ -45,7 +45,6 @@ public class PatientManager {
         }
         System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------");
     }
-    
     
     public static HashMap<Integer, Patient> filterPatientsByDateRange(HashMap<Integer, Patient> patients) throws Exception {
         Scanner sc = new Scanner(System.in);

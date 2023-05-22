@@ -10,12 +10,8 @@ import Management.PatientManager;
 import Management.NurseManager;
 import Utils.Menu;
 import Utils.FileDAO;
-import Utils.MyValidation;
-import java.time.LocalDate;
-import java.time.format.DateTimeParseException;
 import java.util.Scanner;
 import java.util.HashMap;
-import java.util.List;
 /**
  *
  * @author PC
@@ -60,10 +56,12 @@ public class HospitalManagement {
                     FileDAO.displayAllData(patients, nurses);
                     break;
                 case 2:
-                    FileDAO.displayAllData(patients, nurses);
+                    HashMap<Integer, Nurse> searchedNurses = NurseManager.searchNurseByName(nurses);
+                    System.out.println("\nSEARCHED NURSE LIST:");
+                    NurseManager.displayNurses(searchedNurses);
                     break;
                 case 3:
-                    FileDAO.displayAllData(patients, nurses);
+                    NurseManager.updateNurse(nurses);
                     break;
                 case 4:
                     FileDAO.displayAllData(patients, nurses);

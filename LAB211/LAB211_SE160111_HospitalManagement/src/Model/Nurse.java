@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package Model;
 
 /**
@@ -9,13 +5,13 @@ package Model;
  * @author PC
  */
 public class Nurse extends Person{
-    private int staffID;
+    private String staffID;
     private String department;
     private String shift;
     private double salary;
 
     public Nurse(int id, String name, int age, String gender, String address, String phone,
-                 int staffID, String department, String shift, double salary) 
+                 String staffID, String department, String shift, double salary) 
     {
         super(id, name, age, gender, address, phone);
         this.staffID = staffID;
@@ -26,11 +22,11 @@ public class Nurse extends Person{
 
     // Getters and setters for the additional properties
 
-    public int getStaffID() {
+    public String getStaffID() {
         return staffID;
     }
 
-    public void setStaffID(int staffID) {
+    public void setStaffID(String staffID) {
         this.staffID = staffID;
     }
 
