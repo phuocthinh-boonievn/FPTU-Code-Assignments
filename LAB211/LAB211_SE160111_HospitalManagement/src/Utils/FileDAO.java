@@ -11,7 +11,7 @@ import java.util.HashMap;
 
 /**
  *
- * @author PC
+ * @author boonie-pt
  */
 public class FileDAO {
     public static HashMap<Integer, Patient> loadPatients(String fileName) throws Exception {
@@ -75,28 +75,28 @@ public class FileDAO {
     
     public static void displayAllData(HashMap<Integer, Patient> patients, HashMap<Integer, Nurse> nurses) {
         System.out.println("NURSE DATA:");
-        System.out.println("------------------------------------------------------------------------------------------------------------------");
-        System.out.printf("| %-10s | %-20s | %-4s | %-7s | %-20s | %-4s | %-20s | %-7s | %-15s |%n",
+        System.out.println("-----------------------------------------------------------------------------------------------------------------------------------");
+        System.out.printf("| %-3s | %-20s | %-4s | %-5s | %-20s | %-4s | %-20s | %-7s | %-15s |%n",
                 "No.", "Name", "Age", "Gender", "Address", "Staff ID", "Department", "Shift", "Salary");
-        System.out.println("------------------------------------------------------------------------------------------------------------------");
+        System.out.println("-----------------------------------------------------------------------------------------------------------------------------------");
         for (Nurse nurse : nurses.values()) {
-            System.out.printf("| %-10s | %-20s | %-4s | %-7s | %-20s | %-4s | %-20s | %-7s | %-15s |%n",
-                    nurse.getId(), nurse.getName(), nurse.getAge(), nurse.getGender(), nurse.getAddress(),
-                    nurse.getStaffID(),nurse.getDepartment(), nurse.getShift(), nurse.getSalary());
+            System.out.printf("| %-3s | %-20s | %-4s | %-5s | %-20s | %-9s | %-20s | %-7s | %-15.0f |%n",
+                    nurse.getId(), nurse.getName().trim(), nurse.getAge(), nurse.getGender(), nurse.getAddress(),
+                    nurse.getStaffID(),nurse.getDepartment().trim(), nurse.getShift().trim(), nurse.getSalary());
         }
-        System.out.println("------------------------------------------------------------------------------------------------------------------");
+        System.out.println("-----------------------------------------------------------------------------------------------------------------------------------");
 
         System.out.println("\nPATIENT DATA:");
-        System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------");
+        System.out.println("------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------");
         System.out.printf("| %-3s | %-10s | %-15s | %-3s | %-5s | %-20s | %-20s | %-15s | %-20s | %-20s | %-20s | %-15s |%n",
                  "No.","Patient ID", "Name", "Age", "Gender", "Address", "Diagnosis", "Admission Date", "Discharge Date", "Nurse Assigned", "Address", "Phone");
-        System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------");
+        System.out.println("------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------");
         for (Patient patient : patients.values()) {
             System.out.printf("| %-3s |%-11s | %-15s | %-3s | %-6s | %-20s | %-20s | %-15s | %-20s | %-20s | %-20s | %-15s |%n",
                     patient.getId(),patient.getPatientID(), patient.getName(), patient.getAge(), patient.getGender(), patient.getAddress(),
                     patient.getDiagnosis(), patient.getAdmissionDate(), patient.getDischargeDate(),
                     patient.getNurseAssigned(), patient.getAddress(), patient.getPhone());
         }
-        System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------");
+        System.out.println("------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------");
     }
 }

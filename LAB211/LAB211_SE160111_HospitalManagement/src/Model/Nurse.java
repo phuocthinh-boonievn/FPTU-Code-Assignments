@@ -2,7 +2,7 @@ package Model;
 
 /**
  *
- * @author PC
+ * @author boonie-pt
  */
 public class Nurse extends Person{
     private String staffID;

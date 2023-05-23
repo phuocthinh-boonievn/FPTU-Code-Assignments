@@ -20,6 +20,7 @@ public class HospitalManagement {
         
         // TODO code application logic here
         Menu menu = new Menu();
+        menu.add("HOSPITAL MANAGEMENT");
         menu.add("A. Nurse's management");
         menu.add("  1. Create a nurse");
         menu.add("  2. Find a nurse");
@@ -55,7 +56,7 @@ public class HospitalManagement {
                     NurseManager.updateNurse(nurses);
                     break;
                 case 4:
-                    FileDAO.displayAllData(patients, nurses);
+                    NurseManager.deleteNurse(nurses, patients);
                     break;
                 case 5:
                     FileDAO.displayAllData(patients, nurses);

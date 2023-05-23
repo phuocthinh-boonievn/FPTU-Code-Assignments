@@ -1,31 +1,38 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package Management;
 
 import Model.Nurse;
+import Model.Patient;
 import Utils.MyValidation;
 import java.util.Collections;
 import java.util.HashMap;
+import java.util.Map;
 import java.util.Scanner;
 
 /**
  *
- * @author PC
+ * @author boonie-pt
  */
 public class NurseManager {
     public static void displayNurses(HashMap<Integer, Nurse> nurses) {
-        System.out.println("------------------------------------------------------------------------------------------------------------------");
-        System.out.printf("| %-10s | %-20s | %-4s | %-7s | %-20s | %-4s | %-20s | %-7s | %-15s |%n",
+        System.out.println("-----------------------------------------------------------------------------------------------------------------------------------");
+        System.out.printf("| %-3s | %-20s | %-4s | %-5s | %-20s | %-4s | %-20s | %-7s | %-15s |%n",
                 "No.", "Name", "Age", "Gender", "Address", "Staff ID", "Department", "Shift", "Salary");
-        System.out.println("------------------------------------------------------------------------------------------------------------------");
+        System.out.println("-----------------------------------------------------------------------------------------------------------------------------------");
         for (Nurse nurse : nurses.values()) {
-            System.out.printf("| %-10s | %-20s | %-4s | %-7s | %-20s | %-4s | %-20s | %-7s | %-15s |%n",
-                    nurse.getId(), nurse.getName(), nurse.getAge(), nurse.getGender(), nurse.getAddress(),
-                    nurse.getStaffID(),nurse.getDepartment(), nurse.getShift(), nurse.getSalary());
+            System.out.printf("| %-3s | %-20s | %-4s | %-5s | %-20s | %-9s | %-20s | %-7s | %-15.0f |%n",
+                    nurse.getId(), nurse.getName().trim(), nurse.getAge(), nurse.getGender(), nurse.getAddress(),
+                    nurse.getStaffID(),nurse.getDepartment().trim(), nurse.getShift().trim(), nurse.getSalary());
         }
-        System.out.println("------------------------------------------------------------------------------------------------------------------");
+        System.out.println("-----------------------------------------------------------------------------------------------------------------------------------");
+    }
+    
+    public static boolean isStaffIdDuplicated (HashMap<Integer, Nurse> nurses, String staffID){
+        for (HashMap.Entry<Integer, Nurse> entry : nurses.entrySet()) {
+            Nurse nurse = entry.getValue();
+            String nurseStaffId = nurse.getStaffID().toLowerCase().trim();
+            return nurseStaffId.contains(staffID);
+        }
+        return false;
     }
     
     public static HashMap<Integer,Nurse> searchNurseByName(HashMap<Integer, Nurse> nurses){
@@ -54,74 +61,157 @@ public class NurseManager {
         
         boolean continueAdding = true;
         int nextId = getNextNurseId(nurses);
+        int id = nextId++;
+        int age = 0;
+        String gender = "";
+        String shift = "";
+        String address = "";
+        String phone = "";
+        String staffId = "";
+        String department = "";
+        double salary = 0;
         
         while (continueAdding) {
             System.out.println("\nAdd a new nurse");
             System.out.println("-------------------------------");
             
             //ID auto incremental
-            int id = nextId++;
             System.out.println("ID: " + id);
 
             System.out.print("Name: ");
             String name = sc.nextLine().trim();
-            
-            System.out.print("Age: ");
-            int age = Integer.parseInt(sc.nextLine().trim());
-            //Check positive age or not 
-            if (age <= 0) {
-                System.out.println("Age must be a positive number.");
+            if (name.equals("")) {
+                System.out.println("Name must not be null!");
+                continue; 
+            }
+            else if (MyValidation.isNumeric(name)){
+                System.out.println("Name cannot be number!");
                 continue; 
             }
             
-            System.out.print("Gender: ");
-            String gender = sc.nextLine().trim();
-
-            System.out.print("Address: ");
-            String address = sc.nextLine().trim();
-
-            System.out.print("Phone: ");
-            String phone = sc.nextLine().trim();
-            
-            System.out.print("Staff ID: ");
-            String staffId = sc.nextLine().trim();
-            
-            if (nurses.containsKey(staffId)) {
-                System.out.println("The staff ID is already in use. Please enter a unique staff ID.");
-                continue; 
+            boolean validAge = false;
+            while (!validAge) {
+                try {
+                    System.out.print("Age: ");
+                    age = Integer.parseInt(sc.nextLine().trim());
+                    //Check positive age or not 
+                    if (age <= 0) {
+                        System.out.println("Age must be a positive number!");
+                    } else if (Integer.toString(age).equals("")) {
+                        System.out.println("Age must not be null!");
+                    }
+                    validAge = true;
+                } catch (NumberFormatException e) {
+                    System.out.println("Invalid input. Age must be a number!");
+                    validAge = false;
+                }
             }
-            // Is correct phone format
-            if (!MyValidation.isPhone(phone)) {
+            
+            boolean validGender = false;
+            while (!validGender){
+                System.out.print("Gender: ");
+                gender = sc.nextLine().trim();
+                if (gender.equals("")) {
+                    System.out.println("Gender must not be null!");
+                    continue;
+                }
+                validGender = true;
+            }
+            
+            
+            boolean validAddress = false;
+            while (!validAddress){
+                System.out.print("Address: ");
+                address = sc.nextLine().trim();
+                if (address.equals("")) {
+                    System.out.println("Address must not be null!");
+                    continue;
+                }
+                validAddress = true;
+            }
+            
+            boolean validPhone = false;
+            while (!validPhone){
+                System.out.print("Phone: ");
+                phone = sc.nextLine().trim();
+                if (phone.equals("")) {
+                    System.out.println("Phone must not be null!");
+                    continue;
+                }
+                else if (!MyValidation.isPhone(phone)) {
                 System.out.println("Invalid phone format. Please enter a valid phone number.");
                 continue; 
+                }
+                validPhone = true;
+            }
+            
+            boolean validStaffId = false;
+            while (!validStaffId){
+                System.out.print("Staff ID: ");
+                staffId = sc.nextLine().trim();
+                if (staffId.equals("")) {
+                    System.out.println("Staff ID must not be null.");
+                    continue;
+                }
+                else if (isStaffIdDuplicated(nurses, staffId)) {
+                    System.out.println("The staff ID is already in use. Please enter a unique staff ID.");
+                    continue; 
+                }
+                validStaffId = true;
+            }
+            
+            
+            boolean validDepartment = false;
+            while (!validDepartment){
+                System.out.print("Department: ");
+                department = sc.nextLine().trim();
+                if (department.equals("")) {
+                    System.out.println("Department must not be null.");
+                    continue;
+                } else if (department.length() < 3 || department.length() > 50) {
+                    System.out.println("Department length must be between 3 and 50 characters.");
+                    continue;
+                }
+                validDepartment= true;
             }
 
-            System.out.print("Department: ");
-            String department = sc.nextLine().trim();
-
-            // Is correct  department length
-            if (department.length() < 3 || department.length() > 50) {
-                System.out.println("Department length must be between 3 and 50 characters.");
-                continue; 
+            boolean validShift = false;
+            while (!validShift){
+                System.out.print("Shift: ");
+                shift = sc.nextLine().trim();
+                if (shift.equals("")) {
+                    System.out.println("Shift must not be null.");
+                    continue;
+                }
+                validShift = true;
             }
-
-            System.out.print("Shift: ");
-            String shift = sc.nextLine().trim();
-
-            System.out.print("Salary: ");
-            double salary = Double.parseDouble(sc.nextLine().trim());
-            //Check positive salary or not 
-            if (salary <= 0) {
-                System.out.println("Salary must be positive value.");
-                continue; 
+            
+            
+            boolean validSalary = false;
+            while (!validSalary) {
+                try {
+                    System.out.print("Salary: ");
+                    salary = Double.parseDouble(sc.nextLine().trim());
+                    //Check positive age or not 
+                    if (salary <= 0) {
+                        System.out.println("Salary must be a positive number.");
+                    } else if (Double.toString(salary).equals("")) {
+                        System.out.println("Salary must not be null.");
+                    }
+                    validSalary = true;
+                } catch (NumberFormatException e) {
+                    System.out.println("Invalid input. Salary must be a number.");
+                    validSalary = false;
+                }
             }
 
             Nurse nurse = new Nurse(id, name, age, gender, address, phone, staffId, department, shift, salary);
 
             nurses.put(id, nurse);
 
-            System.out.println("Nurse added successfully!");
-
+            System.out.println("Nurse added successfully! Updated nurses list:");
+            displayNurses(nurses);
+            
             System.out.print("Do you want to add another nurse? (yes/no): ");
             String choice = sc.nextLine().trim();
             if (!choice.equalsIgnoreCase("yes")) {
@@ -138,9 +228,9 @@ public class NurseManager {
         boolean nurseExists = false;
         boolean continuteUpdate = false;
         boolean validSalary = false;
-        while (continueAdding) {
-            
-        }
+//        while (continueAdding) {
+//            
+//        }
         for (HashMap.Entry<Integer, Nurse> entry : nurses.entrySet()) {
             Nurse nurse = entry.getValue();
             String originalNurse = nurse.getStaffID().trim();
@@ -185,6 +275,60 @@ public class NurseManager {
             System.out.println("The nurse does not exist.");
         }
     }
+    
+    public static void deleteNurse(HashMap<Integer, Nurse> nurses, HashMap<Integer, Patient> patients) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("\nNURSES LIST:");
+        displayNurses(nurses);
+        
+        System.out.print("Enter the staff ID of the nurse to delete: ");
+        String staffId = scanner.nextLine().trim().toLowerCase();
+
+        boolean nurseExists = false;
+        int nurseIdToDelete = -1;
+
+        // Check if the nurse exists and find the corresponding nurse ID
+        for (Map.Entry<Integer, Nurse> entry : nurses.entrySet()) {
+            if (entry.getValue().getStaffID().trim().toLowerCase().equals(staffId)) {
+                nurseExists = true;
+                nurseIdToDelete = entry.getKey();
+                break;
+            }
+        }
+
+        if (nurseExists) {
+            Nurse nurse = nurses.get(nurseIdToDelete);
+
+            // Check if the nurse has any tasks (nurse name exists in patients)
+            boolean hasTasks = false;
+            for (Patient patient : patients.values()) {
+                if (patient.getNurseAssigned().equalsIgnoreCase(nurse.getName())) {
+                    hasTasks = true;
+                    break;
+                }
+            }
+
+            if (hasTasks) {
+                System.out.println("Cannot delete the nurse. She/he is already assigned to a patient.");
+            } else {
+                // Confirmation message
+                System.out.println("Are you sure you want to delete the nurse? (y/n): ");
+                String choice = scanner.nextLine().trim();
+
+                if (choice.equalsIgnoreCase("yes") || choice.equalsIgnoreCase("y")) {
+                    // Delete the nurse from the collection
+                    nurses.remove(nurseIdToDelete);
+                    System.out.println("Nurse deleted successfully! Updated list:");
+                    displayNurses(nurses);
+                } else {
+                    System.out.println("Deletion canceled.");
+                }
+            }
+        } else {
+            System.out.println("The nurse does not exist.");
+        }
+    }
    
     public static int getNextNurseId(HashMap<Integer, Nurse> nurses) {
         if (nurses.isEmpty()) {
@@ -193,6 +337,4 @@ public class NurseManager {
         // Get the maximum ID from the existing nurses and increment it by 1
         return Collections.max(nurses.keySet()) + 1;
     }
-
-
 }

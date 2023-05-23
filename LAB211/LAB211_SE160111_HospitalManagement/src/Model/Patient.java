@@ -4,7 +4,7 @@ import java.time.LocalDate;
 
 /**
  *
- * @author PC
+ * @author boonie-pt
  */
 public class Patient extends Person{
     private String patientID;

@@ -9,7 +9,10 @@ import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.Scanner;
-
+/**
+ *
+ * @author boonie-pt
+ */
 public class MyValidation {
     ////////////////// STRING
 
@@ -87,30 +90,24 @@ public class MyValidation {
         String pattern = "^[a-zA-Z]([a-zA-Z0-9_.-])+{4,31}@[a-z0-9]{2,}(\\.[a-z0-9]{2,4}){1,2}$";
         return checkString(email, pattern);
     }
+    public static boolean isName(String name)
+    {
+        return checkString(name, "[a-zA-Z]{2,35}|null");
+    }
     
     public static boolean isPhone(String phone)
     {
         return checkString(phone, "^0(([0-9]){9})");
     }
     
-    public static boolean isName(String name)
-    {
-        return checkString(name, "[a-zA-Z]{2,35}");
-    }
-    
-    public static String encrypt(String password) {
+    public static boolean isNumeric(String str) {
         try {
-            MessageDigest md = MessageDigest.getInstance("SHA-256");
-            md.update(password.getBytes(StandardCharsets.UTF_8));
-            byte[] digest = md.digest();
-            String hex = String.format("%064x", new BigInteger(1, digest));
-            return hex;
-        } catch (NoSuchAlgorithmException ex) {
-            System.out.println("No such an Algorithm!");
-            return "";
+            Integer.valueOf(str);
+            return true;
+        } catch (NumberFormatException e) {
+            return false;
         }
     }
-    
     
     ////////////////// NUMBER
     
