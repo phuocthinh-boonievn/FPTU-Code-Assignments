@@ -48,15 +48,99 @@ public class NurseManager {
         }
         return nursesResult;
     }
+    
+    public static void addNurse(HashMap<Integer, Nurse> nurses) {
+        Scanner sc = new Scanner(System.in);
+        
+        boolean continueAdding = true;
+        int nextId = getNextNurseId(nurses);
+        
+        while (continueAdding) {
+            System.out.println("\nAdd a new nurse");
+            System.out.println("-------------------------------");
+            
+            //ID auto incremental
+            int id = nextId++;
+            System.out.println("ID: " + id);
 
+            System.out.print("Name: ");
+            String name = sc.nextLine().trim();
+            
+            System.out.print("Age: ");
+            int age = Integer.parseInt(sc.nextLine().trim());
+            //Check positive age or not 
+            if (age <= 0) {
+                System.out.println("Age must be a positive number.");
+                continue; 
+            }
+            
+            System.out.print("Gender: ");
+            String gender = sc.nextLine().trim();
+
+            System.out.print("Address: ");
+            String address = sc.nextLine().trim();
+
+            System.out.print("Phone: ");
+            String phone = sc.nextLine().trim();
+            
+            System.out.print("Staff ID: ");
+            String staffId = sc.nextLine().trim();
+            
+            if (nurses.containsKey(staffId)) {
+                System.out.println("The staff ID is already in use. Please enter a unique staff ID.");
+                continue; 
+            }
+            // Is correct phone format
+            if (!MyValidation.isPhone(phone)) {
+                System.out.println("Invalid phone format. Please enter a valid phone number.");
+                continue; 
+            }
+
+            System.out.print("Department: ");
+            String department = sc.nextLine().trim();
+
+            // Is correct  department length
+            if (department.length() < 3 || department.length() > 50) {
+                System.out.println("Department length must be between 3 and 50 characters.");
+                continue; 
+            }
+
+            System.out.print("Shift: ");
+            String shift = sc.nextLine().trim();
+
+            System.out.print("Salary: ");
+            double salary = Double.parseDouble(sc.nextLine().trim());
+            //Check positive salary or not 
+            if (salary <= 0) {
+                System.out.println("Salary must be positive value.");
+                continue; 
+            }
+
+            Nurse nurse = new Nurse(id, name, age, gender, address, phone, staffId, department, shift, salary);
+
+            nurses.put(id, nurse);
+
+            System.out.println("Nurse added successfully!");
+
+            System.out.print("Do you want to add another nurse? (yes/no): ");
+            String choice = sc.nextLine().trim();
+            if (!choice.equalsIgnoreCase("yes")) {
+                continueAdding = false;
+            }
+        }
+    }
+    
     public static void updateNurse(HashMap<Integer, Nurse> nurses) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter staff ID of the nurse to update: ");
         String staffId = sc.nextLine().trim().toLowerCase();
 
         boolean nurseExists = false;
+        boolean continuteUpdate = false;
         boolean validSalary = false;
-        
+        while (continueAdding) {
+            
+        }
         for (HashMap.Entry<Integer, Nurse> entry : nurses.entrySet()) {
             Nurse nurse = entry.getValue();
             String originalNurse = nurse.getStaffID().trim();
@@ -69,7 +153,7 @@ public class NurseManager {
                 nurse.setName(newName);
                 
                 System.out.print("Enter nurse "+ originalNurse +"'s new age:");
-                int newAge = sc.nextInt();
+                int newAge = Integer.parseInt(sc.nextLine().trim());
                 nurse.setAge(newAge);
                 
                 System.out.print("Enter nurse "+ originalNurse +"'s new phone:");
@@ -91,7 +175,7 @@ public class NurseManager {
                 System.out.println("Nurse successfully updated!");
                 break;
                 }
-            }catch(Exception e){
+            } catch(Exception e){
                 System.out.println("Failed to update nurse!");
                 MyValidation.getEnter("Press Enter to enter again...");
             }
@@ -101,84 +185,7 @@ public class NurseManager {
             System.out.println("The nurse does not exist.");
         }
     }
-    
-    public static void addNurse(HashMap<Integer, Nurse> nurses) {
-        Scanner scanner = new Scanner(System.in);
-        
-        boolean continueAdding = true;
-        int nextId = getNextNurseId(nurses);
-        
-        while (continueAdding) {
-            System.out.println("\nAdd a new nurse");
-            System.out.println("-------------------------------");
-            
-            //ID auto incremental
-            int id = nextId++;
-            System.out.println("ID: " + id);
-
-            System.out.print("Name: ");
-            String name = scanner.nextLine().trim();
-
-            System.out.print("Age: ");
-            int age = Integer.parseInt(scanner.nextLine().trim());
-
-            System.out.print("Gender: ");
-            String gender = scanner.nextLine().trim();
-
-            System.out.print("Address: ");
-            String address = scanner.nextLine().trim();
-
-            System.out.print("Phone: ");
-            String phone = scanner.nextLine().trim();
-            
-            System.out.print("Staff ID: ");
-            String staffId = scanner.nextLine().trim();
-            
-            if (nurses.containsKey(staffId)) {
-                System.out.println("The staff ID is already in use. Please enter a unique staff ID.");
-                continue; 
-            }
-            // Is correct phone format
-            if (!MyValidation.isPhone(phone)) {
-                System.out.println("Invalid phone format. Please enter a valid phone number.");
-                continue; 
-            }
-
-            System.out.print("Department: ");
-            String department = scanner.nextLine().trim();
-
-            // Is correct  department length
-            if (department.length() < 3 || department.length() > 50) {
-                System.out.println("Department length must be between 3 and 50 characters.");
-                continue; 
-            }
-
-            System.out.print("Shift: ");
-            String shift = scanner.nextLine().trim();
-
-            System.out.print("Salary: ");
-            double salary = Double.parseDouble(scanner.nextLine().trim());
-
-            // Check if positive age and salary
-            if (age <= 0 || salary <= 0) {
-                System.out.println("Age and salary must be positive numbers.");
-                continue; 
-            }
-
-            Nurse nurse = new Nurse(id, name, age, gender, address, phone, staffId, department, shift, salary);
-
-            nurses.put(id, nurse);
-
-            System.out.println("Nurse added successfully!");
-
-            System.out.print("Do you want to add another nurse? (yes/no): ");
-            String choice = scanner.nextLine().trim();
-            if (!choice.equalsIgnoreCase("yes")) {
-                continueAdding = false;
-            }
-        }
-    }
-    
+   
     public static int getNextNurseId(HashMap<Integer, Nurse> nurses) {
         if (nurses.isEmpty()) {
             return 1; // Start from ID 1 if the nurse.dat is empty
