@@ -2,8 +2,6 @@ package Management;
 
 import Model.Patient;
 import Model.Nurse;
-import Management.PatientManager;
-import Management.NurseManager;
 import Utils.Menu;
 import Utils.FileDAO;
 import java.util.Scanner;
@@ -17,8 +15,6 @@ public class HospitalManagement {
     final static String FILE_NURSE = "nurse.dat";
     
     public static void main(String[] args) throws Exception {
-        
-        // TODO code application logic here
         Menu menu = new Menu();
         menu.add("HOSPITAL MANAGEMENT");
         menu.add("A. Nurse's management");
@@ -35,9 +31,8 @@ public class HospitalManagement {
         menu.add("  9. Load data");
         menu.add("Others - Exit");
         
-        HashMap<Integer, Patient> patients = FileDAO.loadPatients(FILE_PATIENT);
-        HashMap<Integer, Nurse> nurses = FileDAO.loadNurses(FILE_NURSE);
-        
+        HashMap<Integer, Patient> patients = FileDAO.loadPatientsFromFile(FILE_PATIENT);
+        HashMap<Integer, Nurse> nurses = FileDAO.loadNursesFromFile(FILE_NURSE);
         
         int choice = 0;
         boolean cont = true;
@@ -73,7 +68,8 @@ public class HospitalManagement {
                     PatientManager.displayPatients(sortedPatientsList);
                     break;
                 case 8:
-                    FileDAO.displayAllData(patients, nurses);
+                    FileDAO.saveNursesToFile(nurses);
+                    FileDAO.savePatientsToFile(patients);
                     break;
                 case 9:
                     FileDAO.displayAllData(patients, nurses);

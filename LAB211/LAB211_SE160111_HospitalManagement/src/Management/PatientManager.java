@@ -33,9 +33,9 @@ public class PatientManager {
             System.out.println("------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------");
             for (Patient patient : patients.values()) {
                 System.out.printf("| %-3s |%-11s | %-15s | %-3s | %-6s | %-20s | %-20s | %-15s | %-20s | %-20s | %-20s | %-15s |%n",
-                        patient.getId(),patient.getPatientID(), patient.getName(), patient.getAge(), patient.getGender(), patient.getAddress(),
+                        patient.getId(),patient.getPatientId(), patient.getName(), patient.getAge(), patient.getGender(), patient.getAddress(),
                         patient.getDiagnosis(), patient.getAdmissionDate(), patient.getDischargeDate(),
-                        patient.getNurseAssigned(), patient.getAddress(), patient.getPhone());
+                        patient.getAssignedNurse(), patient.getAddress(), patient.getPhone());
             }
             System.out.println("------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------");
         }
@@ -146,7 +146,7 @@ public class PatientManager {
         List<Map.Entry<Integer, Patient>> sortedEntries = new ArrayList<>(patients.entrySet());
 
         if (sortField.equalsIgnoreCase("patient ID")) {
-            sortedEntries.sort(Comparator.comparing(entry -> entry.getValue().getPatientID()));
+            sortedEntries.sort(Comparator.comparing(entry -> entry.getValue().getPatientId()));
         } else if (sortField.equalsIgnoreCase("name")) {
             sortedEntries.sort(Comparator.comparing(entry -> entry.getValue().getName()));
         }

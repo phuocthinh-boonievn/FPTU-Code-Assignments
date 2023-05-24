@@ -21,7 +21,7 @@ public class NurseManager {
         for (Nurse nurse : nurses.values()) {
             System.out.printf("| %-3s | %-20s | %-4s | %-5s | %-20s | %-9s | %-20s | %-7s | %-15.0f |%n",
                     nurse.getId(), nurse.getName().trim(), nurse.getAge(), nurse.getGender(), nurse.getAddress(),
-                    nurse.getStaffID(),nurse.getDepartment().trim(), nurse.getShift().trim(), nurse.getSalary());
+                    nurse.getStaffId(),nurse.getDepartment().trim(), nurse.getShift().trim(), nurse.getSalary());
         }
         System.out.println("-----------------------------------------------------------------------------------------------------------------------------------");
     }
@@ -29,7 +29,7 @@ public class NurseManager {
     public static boolean isStaffIdDuplicated (HashMap<Integer, Nurse> nurses, String staffID){
         for (HashMap.Entry<Integer, Nurse> entry : nurses.entrySet()) {
             Nurse nurse = entry.getValue();
-            String nurseStaffId = nurse.getStaffID().toLowerCase().trim();
+            String nurseStaffId = nurse.getStaffId().toLowerCase().trim();
             return nurseStaffId.contains(staffID);
         }
         return false;
@@ -233,7 +233,7 @@ public class NurseManager {
 //        }
         for (HashMap.Entry<Integer, Nurse> entry : nurses.entrySet()) {
             Nurse nurse = entry.getValue();
-            String originalNurse = nurse.getStaffID().trim();
+            String originalNurse = nurse.getStaffId().trim();
             try {
                 if (originalNurse.equalsIgnoreCase(staffId)) {
                 nurseExists = true;
@@ -278,19 +278,17 @@ public class NurseManager {
     
     public static void deleteNurse(HashMap<Integer, Nurse> nurses, HashMap<Integer, Patient> patients) {
         Scanner scanner = new Scanner(System.in);
-
         System.out.println("\nNURSES LIST:");
         displayNurses(nurses);
-        
         System.out.print("Enter the staff ID of the nurse to delete: ");
         String staffId = scanner.nextLine().trim().toLowerCase();
 
         boolean nurseExists = false;
         int nurseIdToDelete = -1;
 
-        // Check if the nurse exists and find the corresponding nurse ID
+        // Check if the nurse exists 
         for (Map.Entry<Integer, Nurse> entry : nurses.entrySet()) {
-            if (entry.getValue().getStaffID().trim().toLowerCase().equals(staffId)) {
+            if (entry.getValue().getStaffId().trim().toLowerCase().equals(staffId)) {
                 nurseExists = true;
                 nurseIdToDelete = entry.getKey();
                 break;
@@ -300,10 +298,10 @@ public class NurseManager {
         if (nurseExists) {
             Nurse nurse = nurses.get(nurseIdToDelete);
 
-            // Check if the nurse has any tasks (nurse name exists in patients)
+            // Check if the nurse is assigned in patients (nurse name exists in patients)
             boolean hasTasks = false;
             for (Patient patient : patients.values()) {
-                if (patient.getNurseAssigned().equalsIgnoreCase(nurse.getName())) {
+                if (patient.getAssignedNurse().trim().equalsIgnoreCase(nurse.getName().trim())) {
                     hasTasks = true;
                     break;
                 }
@@ -317,7 +315,6 @@ public class NurseManager {
                 String choice = scanner.nextLine().trim();
 
                 if (choice.equalsIgnoreCase("yes") || choice.equalsIgnoreCase("y")) {
-                    // Delete the nurse from the collection
                     nurses.remove(nurseIdToDelete);
                     System.out.println("Nurse deleted successfully! Updated list:");
                     displayNurses(nurses);
@@ -332,9 +329,8 @@ public class NurseManager {
    
     public static int getNextNurseId(HashMap<Integer, Nurse> nurses) {
         if (nurses.isEmpty()) {
-            return 1; // Start from ID 1 if the nurse.dat is empty
+            return 1; 
         }
-        // Get the maximum ID from the existing nurses and increment it by 1
         return Collections.max(nurses.keySet()) + 1;
     }
 }

@@ -100,6 +100,12 @@ public class MyValidation {
         return checkString(phone, "^0(([0-9]){9})");
     }
     
+    
+    
+    ////////////////// NUMBER
+    
+    // Integer
+    
     public static boolean isNumeric(String str) {
         try {
             Integer.valueOf(str);
@@ -108,29 +114,7 @@ public class MyValidation {
             return false;
         }
     }
-    
-    ////////////////// NUMBER
-    
-    // Integer
-    /**
-     * Check if an integer number is in the domain of [min, max]
-     * @param num number to check
-     * @param min minimum value
-     * @param max maximum value
-     * @return true if num is in [min, max]
-     */
 
-    public static boolean checkIntNumber(int num, int min, int max)
-    {
-        return num >= min && num <= max;
-    }
-    
-    /**
-     * Check if an integer number is smaller or equal to a maximum value
-     * @param num number to check
-     * @param max maximum value to compare
-     * @return true if num is smaller or equal to max
-     */
     public static boolean checkIntNumMax(int num, int max)
     {
         return num <= max;
@@ -158,11 +142,6 @@ public class MyValidation {
     public static LocalDate checkDate(String dateString) throws Exception {
         DateTimeFormatter dateFormatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
         return LocalDate.parse(dateString.trim(), dateFormatter);
-    }
-    
-    public static boolean isValidDate(int year, int month, int day)
-    {
-        return isValidDate(day + "/" + month + "/" + year, "dd/MM/yyyy") && (year < 2020 || (year == 2020 && month <= 9 && day <= 30)) ;
     }
     
     public static boolean isValidDate(String date, String format) {

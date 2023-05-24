@@ -7,29 +7,29 @@ import java.time.LocalDate;
  * @author boonie-pt
  */
 public class Patient extends Person{
-    private String patientID;
+    private String patientId;
     private String diagnosis;
     private LocalDate admissionDate;
     private LocalDate dischargeDate;
-    private String nurseAssigned;
+    private String assignedNurse;
 
     public Patient(int id, String name, int age, String gender, String address, String phone,
                    String patientID, String diagnosis, LocalDate admissionDate, LocalDate dischargeDate, String nurseAssigned) 
     {
         super(id, name, age, gender, address, phone);
-        this.patientID = patientID;
+        this.patientId = patientID;
         this.diagnosis = diagnosis;
         this.admissionDate = admissionDate;
         this.dischargeDate = dischargeDate;
-        this.nurseAssigned = nurseAssigned;
+        this.assignedNurse = nurseAssigned;
     }
 
-    public String getPatientID() {
-        return patientID;
+    public String getPatientId() {
+        return patientId;
     }
 
-    public void setPatientID(String patientID) {
-        this.patientID = patientID;
+    public void setPatientId(String patientId) {
+        this.patientId = patientId;
     }
 
    
@@ -57,11 +57,11 @@ public class Patient extends Person{
         this.dischargeDate = dischargeDate;
     }
 
-    public String getNurseAssigned() {
-        return nurseAssigned;
+    public String getAssignedNurse() {
+        return assignedNurse;
     }
 
-    public void setNurseAssigned(String nurseAssigned) {
-        this.nurseAssigned = nurseAssigned;
+    public void setAssignedNurse(String assignedNurse) {
+        this.assignedNurse = assignedNurse;
     }
 }

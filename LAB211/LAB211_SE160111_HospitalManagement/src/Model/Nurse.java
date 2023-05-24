@@ -5,7 +5,7 @@ package Model;
  * @author boonie-pt
  */
 public class Nurse extends Person{
-    private String staffID;
+    private String staffId;
     private String department;
     private String shift;
     private double salary;
@@ -14,7 +14,7 @@ public class Nurse extends Person{
                  String staffID, String department, String shift, double salary) 
     {
         super(id, name, age, gender, address, phone);
-        this.staffID = staffID;
+        this.staffId = staffID;
         this.department = department;
         this.shift = shift;
         this.salary = salary;
@@ -22,12 +22,12 @@ public class Nurse extends Person{
 
     // Getters and setters for the additional properties
 
-    public String getStaffID() {
-        return staffID;
+    public String getStaffId() {
+        return staffId;
     }
 
-    public void setStaffID(String staffID) {
-        this.staffID = staffID;
+    public void setStaffId(String staffId) {
+        this.staffId = staffId;
     }
 
     public String getDepartment() {
