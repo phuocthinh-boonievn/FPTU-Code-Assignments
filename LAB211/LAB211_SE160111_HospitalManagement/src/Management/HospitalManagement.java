@@ -34,10 +34,9 @@ public class HospitalManagement {
         HashMap<Integer, Patient> patients = FileDAO.loadPatientsFromFile(FILE_PATIENT);
         HashMap<Integer, Nurse> nurses = FileDAO.loadNursesFromFile(FILE_NURSE);
         
-        int choice = 0;
         boolean cont = true;
         do{
-            choice = menu.getUserChoice();
+            int choice = menu.getUserChoice();
             switch (choice) {
                 case 1:
                     NurseManager.addNurse(nurses);
@@ -54,7 +53,7 @@ public class HospitalManagement {
                     NurseManager.deleteNurse(nurses, patients);
                     break;
                 case 5:
-                    FileDAO.displayAllData(patients, nurses);
+                    PatientManager.addPatient(patients, nurses);
                     break;
                 case 6:
                     HashMap<Integer, Patient> filteredPatients = PatientManager.filterPatientsByDateRange(patients);
@@ -63,7 +62,7 @@ public class HospitalManagement {
                     PatientManager.displayPatients(admissionPatientsList);
                     break;
                 case 7:
-                    HashMap<Integer, Patient> sortedPatientsList = PatientManager.getUserSortPreferences(patients);
+                    HashMap<Integer, Patient> sortedPatientsList = PatientManager.sortPatientsByTypeAndOrder(patients);
                     System.out.println("\nSORTED PATIENT LIST:");
                     PatientManager.displayPatients(sortedPatientsList);
                     break;

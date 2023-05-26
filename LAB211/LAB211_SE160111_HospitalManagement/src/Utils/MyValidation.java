@@ -1,9 +1,5 @@
 package Utils;
 
-import java.math.BigInteger;
-import java.nio.charset.StandardCharsets;
-import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.time.LocalDate;
@@ -99,8 +95,6 @@ public class MyValidation {
     {
         return checkString(phone, "^0(([0-9]){9})");
     }
-    
-    
     
     ////////////////// NUMBER
     

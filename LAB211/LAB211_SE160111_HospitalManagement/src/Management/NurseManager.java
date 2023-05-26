@@ -2,6 +2,7 @@ package Management;
 
 import Model.Nurse;
 import Model.Patient;
+import Utils.FileDAO;
 import Utils.MyValidation;
 import java.util.Collections;
 import java.util.HashMap;
@@ -26,7 +27,7 @@ public class NurseManager {
         System.out.println("-----------------------------------------------------------------------------------------------------------------------------------");
     }
     
-    public static boolean isStaffIdDuplicated (HashMap<Integer, Nurse> nurses, String staffID){
+    public static boolean isStaffIdDuplicated(HashMap<Integer, Nurse> nurses, String staffID){
         for (HashMap.Entry<Integer, Nurse> entry : nurses.entrySet()) {
             Nurse nurse = entry.getValue();
             String nurseStaffId = nurse.getStaffId().toLowerCase().trim();
@@ -35,7 +36,18 @@ public class NurseManager {
         return false;
     }
     
+    public static boolean isNurseNameDuplicated(HashMap<Integer, Nurse> nurses, String name){
+        for (HashMap.Entry<Integer, Nurse> entry : nurses.entrySet()) {
+            Nurse nurse = entry.getValue();
+            String nurseName = nurse.getName().trim();
+            return nurseName.contains(name);
+        }
+        return false;
+    }
+    
     public static HashMap<Integer,Nurse> searchNurseByName(HashMap<Integer, Nurse> nurses){
+        System.out.print("LIST OF NURSES: ");
+        displayNurses(nurses);
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the nurse's name or part of the name: ");
         String searchName = sc.nextLine().trim().toLowerCase();
@@ -60,8 +72,9 @@ public class NurseManager {
         Scanner sc = new Scanner(System.in);
         
         boolean continueAdding = true;
-        int nextId = getNextNurseId(nurses);
+        int nextId = FileDAO.incrementNurseId(nurses);
         int id = nextId++;
+        String name = "";
         int age = 0;
         String gender = "";
         String shift = "";
@@ -79,7 +92,7 @@ public class NurseManager {
             System.out.println("ID: " + id);
 
             System.out.print("Name: ");
-            String name = sc.nextLine().trim();
+            name = sc.nextLine().trim();
             if (name.equals("")) {
                 System.out.println("Name must not be null!");
                 continue; 
@@ -186,7 +199,6 @@ public class NurseManager {
                 validShift = true;
             }
             
-            
             boolean validSalary = false;
             while (!validSalary) {
                 try {
@@ -226,8 +238,8 @@ public class NurseManager {
         String staffId = sc.nextLine().trim().toLowerCase();
 
         boolean nurseExists = false;
-        boolean continuteUpdate = false;
-        boolean validSalary = false;
+//        boolean continuteUpdate = false;
+//        boolean validSalary = false;
 //        while (continueAdding) {
 //            
 //        }
@@ -265,7 +277,7 @@ public class NurseManager {
                 System.out.println("Nurse successfully updated!");
                 break;
                 }
-            } catch(Exception e){
+            } catch(NumberFormatException e){
                 System.out.println("Failed to update nurse!");
                 MyValidation.getEnter("Press Enter to enter again...");
             }
@@ -298,10 +310,9 @@ public class NurseManager {
         if (nurseExists) {
             Nurse nurse = nurses.get(nurseIdToDelete);
 
-            // Check if the nurse is assigned in patients (nurse name exists in patients)
             boolean hasTasks = false;
             for (Patient patient : patients.values()) {
-                if (patient.getAssignedNurse().trim().equalsIgnoreCase(nurse.getName().trim())) {
+                if (patient.getNurseAssigned().trim().equalsIgnoreCase(nurse.getName().trim())) {
                     hasTasks = true;
                     break;
                 }
@@ -311,7 +322,7 @@ public class NurseManager {
                 System.out.println("Cannot delete the nurse. She/he is already assigned to a patient.");
             } else {
                 // Confirmation message
-                System.out.println("Are you sure you want to delete the nurse? (y/n): ");
+                System.out.println("Are you sure you want to delete the nurse? (yes/no): ");
                 String choice = scanner.nextLine().trim();
 
                 if (choice.equalsIgnoreCase("yes") || choice.equalsIgnoreCase("y")) {
@@ -327,10 +338,5 @@ public class NurseManager {
         }
     }
    
-    public static int getNextNurseId(HashMap<Integer, Nurse> nurses) {
-        if (nurses.isEmpty()) {
-            return 1; 
-        }
-        return Collections.max(nurses.keySet()) + 1;
-    }
+    
 }

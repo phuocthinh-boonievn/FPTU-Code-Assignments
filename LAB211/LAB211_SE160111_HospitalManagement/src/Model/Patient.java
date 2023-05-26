@@ -10,8 +10,8 @@ public class Patient extends Person{
     private String patientId;
     private String diagnosis;
     private LocalDate admissionDate;
-    private LocalDate dischargeDate;
-    private String assignedNurse;
+    private LocalDate dischargeDate;    
+    private String nurseAssigned;
 
     public Patient(int id, String name, int age, String gender, String address, String phone,
                    String patientID, String diagnosis, LocalDate admissionDate, LocalDate dischargeDate, String nurseAssigned) 
@@ -21,7 +21,7 @@ public class Patient extends Person{
         this.diagnosis = diagnosis;
         this.admissionDate = admissionDate;
         this.dischargeDate = dischargeDate;
-        this.assignedNurse = nurseAssigned;
+        this.nurseAssigned = nurseAssigned;
     }
 
     public String getPatientId() {
@@ -57,11 +57,11 @@ public class Patient extends Person{
         this.dischargeDate = dischargeDate;
     }
 
-    public String getAssignedNurse() {
-        return assignedNurse;
+    public String getNurseAssigned() {
+        return nurseAssigned;
     }
 
-    public void setAssignedNurse(String assignedNurse) {
-        this.assignedNurse = assignedNurse;
+    public void setNurseAssigned(String nurseAssigned) {
+        this.nurseAssigned = nurseAssigned;
     }
 }
