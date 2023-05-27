@@ -1,4 +1,4 @@
-package Management;
+package Manager;
 
 import Model.Patient;
 import Model.Nurse;

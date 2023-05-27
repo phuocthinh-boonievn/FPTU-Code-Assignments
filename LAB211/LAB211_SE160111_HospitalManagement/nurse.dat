@@ -1,4 +1,6 @@
-1, Nurse Gregg Tashi  ,18, M, 229/16 Nguyen Van Dau   , 0123456789, N01, Department 1, Shift 1,10000000
-2, Nurse Mary Jackson ,21, F, 403 Nguyen Van Cu Street, 0123456789, N02, Department 2, Shift 2,15500000
-3, Nurse Lisa Irmina  ,30, F, No 747 Bach Dang        , 0123456789, N03, Department 3, Shift 2,21000000
-4, Nurse Punit Avhust ,28, M, 76 Nguyen Thanh Street  , 0123456789, N04, Department 2, Shift 3,19000000
+1, Nurse Gregg Toshi     ,28, M, 230/16 Nguyen Vau Cu St., 0987621432, N01, Department X, Day Shift  ,12000000
+2, Nurse Mary Jackson    ,21, F, 403 Nguyen Van Cu Street, 0123456789, N02, Department 2, Night Shift,15500000
+3, Nurse Lisa Irmina     ,30, F, No 747 Bach Dang        , 0918022018, N03, Department 9, Day Shift  ,21000000
+4, Nurse Punit Avhust    ,28, M, 76 Nguyen Thanh Street  , 0766755267, N04, Department 2, Day Shift  ,11000000
+5, Nurse Rudy Ellison    ,28, M, 123 Quan 9 Thu Duc St.  , 0913536139, N05, Department 2, Night Shift,5000000
+6, Nurse Nguyen Duc Vinh ,28, M, 05 Than Hoan Street     , 0322431239, N06, Department 1, Day Shift  ,3500000

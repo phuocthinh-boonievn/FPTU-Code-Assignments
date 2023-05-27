@@ -1,4 +1,4 @@
-package Management;
+package Manager;
 
 import Model.Nurse;
 import Model.Patient;
@@ -256,32 +256,6 @@ public class PatientManager {
                 continueAdding = false;
             }
         }
-    }
-    
-    public static void testNurse(HashMap<Integer, Patient> patients, HashMap<Integer,Nurse> nurses) {
-        Scanner sc = new Scanner(System.in);
-        
-        System.out.println("Available nurses:");
-        NurseManager.displayNurses(nurses);
-        String nurseAssigned = "";
-        boolean validNurse = false;
-            while (!validNurse){
-                System.out.print("Nurse assigned: ");
-                nurseAssigned = sc.nextLine().trim();
-                if (nurseAssigned.equals("")) {
-                    System.out.println("Nurse assigned must not be null!");
-                    continue;
-                }
-                else if (!NurseManager.isNurseNameDuplicated(nurses, nurseAssigned)) {
-                    System.out.println("Invalid nurse assigned. Please select a nurse from the available nurses.");
-                    continue;
-                }
-                else if (isNurseAtMaxCapacity(nurseAssigned, patients)) {
-                    System.out.println("The nurse is already assigned to the maximum number of patients.");
-                    continue;
-                }
-                validNurse = true;
-            }
     }
     
     public static HashMap<Integer, Patient> filterPatientsByDateRange(HashMap<Integer, Patient> patients) throws Exception {
