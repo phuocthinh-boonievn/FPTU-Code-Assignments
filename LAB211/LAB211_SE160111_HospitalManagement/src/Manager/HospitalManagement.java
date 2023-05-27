@@ -74,11 +74,12 @@ public class HospitalManagement {
                     FileDAO.displayAllData(patients, nurses);
                     break;
                 default:
-                    System.out.println("\nPATIENT LIST:");
                     Scanner sc = new Scanner(System.in);
                     System.out.println("Do yo really want to exit the application?");
                     String input = sc.nextLine();
                     if (input.equals("yes") || input.equals("y")) {
+                        FileDAO.saveNursesToFile(nurses);
+                        FileDAO.savePatientsToFile(patients);
                         cont = false;
                         break;
                     }
