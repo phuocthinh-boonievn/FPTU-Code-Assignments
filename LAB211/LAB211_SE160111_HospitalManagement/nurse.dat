@@ -1,4 +1,4 @@
-1,     Nurse Gregg Tashi    , 18,     M,     123 HCM City,     0123456789,     N01,     Department 1,     Shift 1, 10000000
-2,     Nurse Mary Jackson   , 21,     F,     123 HCM City,     0123456789,     N02,     Department 2,     Shift 2, 15500000
-3,     Nurse Lisa Irmina    , 30,     F,     123 HCM City,     0123456789,     N03,     Department 3,     Shift 2, 21000000
-4,     Nurse Punit Avhust   , 28,     M,     123 HCM City,     0123456789,     N04,     Department 2,     Shift 3, 19000000
+1, Nurse Gregg Tashi  ,18, M, 229/16 Nguyen Van Dau   , 0123456789, N01, Department 1, Shift 1,10000000
+2, Nurse Mary Jackson ,21, F, 403 Nguyen Van Cu Street, 0123456789, N02, Department 2, Shift 2,15500000
+3, Nurse Lisa Irmina  ,30, F, No 747 Bach Dang        , 0123456789, N03, Department 3, Shift 2,21000000
+4, Nurse Punit Avhust ,28, M, 76 Nguyen Thanh Street  , 0123456789, N04, Department 2, Shift 3,19000000

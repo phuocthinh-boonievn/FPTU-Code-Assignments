@@ -1,6 +1,6 @@
-1,     John Weston   , 48,     M,     123 HCM City,     0123456789,     P0001,     Heart-attack, 15/12/2022, 11/04/2023,     Nurse Lisa Irmina
-2,     Mary Kennys   , 28,     F,     123 HCM City,     0325375520,     P0002,     Heart-attack, 09/12/2022, 11/04/2023,     Nurse Lisa Irmina
-3,     Cir Smith     , 20,     F,     123 HCM City,     0939064869,     P0003,     Flu         , 10/04/2023, 11/04/2023,     Nurse Mary Jackson
-4,     Bill Jamie    , 15,     F,     123 HCM City,     0932123495,     P0004,     Fever       , 11/03/2023, 11/04/2023,     Nurse Punit Avhust
-5,     Ann Smith     , 10,     F,     123 HCM City,     0853321452,     P0005,     Cough       , 05/02/2023, 11/04/2023,     Nurse Gregg Tashi
-6,     Ronaldo Delima, 35,     F,     123 HCM City,     0273456910,     P0006,     Aids        , 20/01/2023, 20/01/2023,     Nurse Punit Avhust
+1, John Weston   ,48, M, 64 Nguyen Phuc Nguyen Street, 0123456789, P0001, Heart-attack,15/12/2022,11/04/2023, Nurse Lisa Irmina
+2, Mary Kennys   ,28, F, No. 2 Street                , 0325375520, P0002, Heart-attack,09/12/2022,11/04/2023, Nurse Lisa Irmina
+3, Cir Smith     ,20, F, 57/D6 Quoc Lo 13 St         , 0939064869, P0003, Flu         ,10/04/2023,11/04/2023, Nurse Mary Jackson
+4, Bill Jamie    ,15, F, Kiot IL 07                  , 0932123495, P0004, Fever       ,11/03/2023,11/04/2023, Nurse Punit Avhust
+5, Ann Smith     ,10, F, Home Apartment - Bo De Ward , 0853321452, P0005, Cough       ,05/02/2023,11/04/2023, Nurse Gregg Tashi
+6, Ronaldo Delima,35, F, 35 Calmette St - Ward 3     , 0273456910, P0006, Aids        ,20/01/2023,20/01/2023, Nurse Punit Avhust

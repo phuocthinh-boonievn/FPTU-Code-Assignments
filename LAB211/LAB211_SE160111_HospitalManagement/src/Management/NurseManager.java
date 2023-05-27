@@ -16,13 +16,13 @@ import java.util.Scanner;
 public class NurseManager {
     public static void displayNurses(HashMap<Integer, Nurse> nurses) {
         System.out.println("-----------------------------------------------------------------------------------------------------------------------------------");
-        System.out.printf("| %-3s | %-20s | %-4s | %-5s | %-20s | %-4s | %-20s | %-7s | %-15s |%n",
+        System.out.printf("| %-3s | %-20s | %-4s | %-5s | %-30s | %-4s | %-20s | %-7s | %-15s |%n",
                 "No.", "Name", "Age", "Gender", "Address", "Staff ID", "Department", "Shift", "Salary");
         System.out.println("-----------------------------------------------------------------------------------------------------------------------------------");
         for (Nurse nurse : nurses.values()) {
-            System.out.printf("| %-3s | %-20s | %-4s | %-5s | %-20s | %-9s | %-20s | %-7s | %-15.0f |%n",
-                    nurse.getId(), nurse.getName().trim(), nurse.getAge(), nurse.getGender(), nurse.getAddress(),
-                    nurse.getStaffId(),nurse.getDepartment().trim(), nurse.getShift().trim(), nurse.getSalary());
+            System.out.printf("| %-3s | %-20s | %-4s | %-6s | %-30s | %-8s | %-20s | %-7s | %-15.0f |%n",
+                    nurse.getId(), nurse.getName().trim(), nurse.getAge(), nurse.getGender().trim(), nurse.getAddress().trim(),
+                    nurse.getStaffId().trim(), nurse.getDepartment().trim(), nurse.getShift().trim(), nurse.getSalary());
         }
         System.out.println("-----------------------------------------------------------------------------------------------------------------------------------");
     }
@@ -90,17 +90,20 @@ public class NurseManager {
             
             //ID auto incremental
             System.out.println("ID: " + id);
-
-            System.out.print("Name: ");
-            name = sc.nextLine().trim();
-            if (name.equals("")) {
-                System.out.println("Name must not be null!");
-                continue; 
+            
+            boolean validName = false;
+            while (!validName){
+                System.out.print("Name: ");
+                name = sc.nextLine().trim();
+                if (name.equals("")) {
+                    System.out.println("Name must not be null!");
+                }
+                else if (MyValidation.isNumeric(name)){
+                    System.out.println("Name cannot be number!");
+                }
+                validName = true;
             }
-            else if (MyValidation.isNumeric(name)){
-                System.out.println("Name cannot be number!");
-                continue; 
-            }
+            
             
             boolean validAge = false;
             while (!validAge) {
@@ -110,7 +113,11 @@ public class NurseManager {
                     //Check positive age or not 
                     if (age <= 0) {
                         System.out.println("Age must be a positive number!");
-                    } else if (Integer.toString(age).equals("")) {
+                    } 
+                    else if (age >=1 && age < 18) {
+                        System.out.println("Age must be equal or larger than 18!");
+                    } 
+                    else if (Integer.toString(age).equals("")) {
                         System.out.println("Age must not be null!");
                     }
                     validAge = true;
@@ -238,44 +245,105 @@ public class NurseManager {
         String staffId = sc.nextLine().trim().toLowerCase();
 
         boolean nurseExists = false;
-//        boolean continuteUpdate = false;
-//        boolean validSalary = false;
-//        while (continueAdding) {
-//            
-//        }
         for (HashMap.Entry<Integer, Nurse> entry : nurses.entrySet()) {
             Nurse nurse = entry.getValue();
             String originalNurse = nurse.getStaffId().trim();
             try {
                 if (originalNurse.equalsIgnoreCase(staffId)) {
-                nurseExists = true;
-                
-                System.out.print("Enter nurse "+ originalNurse +"'s new name:");
-                String newName = sc.nextLine().trim();
-                nurse.setName(newName);
-                
-                System.out.print("Enter nurse "+ originalNurse +"'s new age:");
-                int newAge = Integer.parseInt(sc.nextLine().trim());
-                nurse.setAge(newAge);
-                
-                System.out.print("Enter nurse "+ originalNurse +"'s new phone:");
-                String newPhone = sc.nextLine().trim();
-                nurse.setPhone(newPhone);
-                
-                System.out.print("Enter nurse "+ originalNurse +"'s new department:");
-                String newDepartment = sc.nextLine().trim();
-                nurse.setDepartment(newDepartment);
-                
-                System.out.print("Enter nurse "+ originalNurse +"'s new shift:");
-                String newShift = sc.nextLine().trim();
-                nurse.setShift(newShift);
-                
-                System.out.print("Enter nurse "+ originalNurse +"'s new salary:");
-                Double newSalary = sc.nextDouble();
-                nurse.setSalary(newSalary);
-
-                System.out.println("Nurse successfully updated!");
-                break;
+                    nurseExists = true;
+                    
+                    boolean validName = false;
+                    while (!validName){
+                        System.out.print("Enter nurse "+ originalNurse +"'s new name (press enter to skip):");
+                        String newName = sc.nextLine().trim();
+                        if (newName.equals("")) {
+                            System.out.println("Skipped updating nurse's name.");
+                            break;
+                        }
+                        else if (MyValidation.isNumeric(newName)){
+                            System.out.println("Nurse name cannot be number!");
+                            continue;
+                        }
+                        nurse.setName(newName);
+                        validName = true;
+                        System.out.println("Name updated!");
+                    }
+                    boolean validAge = false;
+                    while (!validAge) {
+                        try {
+                            System.out.print("Enter nurse "+ originalNurse +"'s new age (press enter to skip):");
+                            int newAge = Integer.parseInt(sc.nextLine().trim());
+                            //Check positive age or not 
+                            if (Integer.toString(newAge).equals("")) {
+                                System.out.println("Skipped updating nurse's age.");
+                                break;
+                            } 
+                            else if (newAge <=0) {
+                                System.out.println("Age must be a positive number!");
+                                continue;
+                            }
+                            else if ( newAge >= 1 && newAge < 18){
+                                System.out.println("Age must be equal or larger than 18!");
+                                continue;
+                            }
+                            nurse.setAge(newAge);
+                            validAge = true;
+                        } catch (NumberFormatException e) {
+                            System.out.println("Invalid input. Age must be a number!");
+                            validAge = false;
+                        }
+                    }
+                    boolean validGender = false;
+                    while (!validGender){
+                        System.out.print("Enter nurse "+ originalNurse +"'s new gender (press enter to skip):");
+                        String newGender = sc.nextLine().trim();
+                        if (newGender.equals("")) {
+                            System.out.println("Skipped updating nurse's gender.");
+                            break;
+                        }
+                        else if (MyValidation.isNumeric(newGender)){
+                            System.out.println("Gender cannot be number!");
+                            continue;
+                        }
+                        nurse.setGender(newGender);
+                        validGender = true;
+                        System.out.println("Gender updated!");
+                    }
+                    
+//                    System.out.print("Enter nurse "+ originalNurse +"'s new name:");
+//                    String newName = sc.nextLine().trim();
+//                    nurse.setName(newName);
+//
+//                    System.out.print("Enter nurse "+ originalNurse +"'s new age:");
+//                    int newAge = Integer.parseInt(sc.nextLine().trim());
+//                    nurse.setAge(newAge);
+//
+//                    System.out.print("Enter nurse "+ originalNurse +"'s new gender:");
+//                    String newGender = sc.nextLine().trim();
+//                    nurse.setGender(newGender);
+//
+//                    System.out.print("Enter nurse "+ originalNurse +"'s new address:");
+//                    String newAddress = sc.nextLine().trim();
+//                    nurse.setAddress(newAddress);
+//
+//                    System.out.print("Enter nurse "+ originalNurse +"'s new phone:");
+//                    String newPhone = sc.nextLine().trim();
+//                    nurse.setPhone(newPhone);
+//
+//                    System.out.print("Enter nurse "+ originalNurse +"'s new department:");
+//                    String newDepartment = sc.nextLine().trim();
+//                    nurse.setDepartment(newDepartment);
+//
+//                    System.out.print("Enter nurse "+ originalNurse +"'s new shift:");
+//                    String newShift = sc.nextLine().trim();
+//                    nurse.setShift(newShift);
+//
+//                    System.out.print("Enter nurse "+ originalNurse +"'s new salary:");
+//                    Double newSalary = sc.nextDouble();
+//                    nurse.setSalary(newSalary);
+//
+//                    System.out.println("Nurse successfully updated!");
+                    break;
                 }
             } catch(NumberFormatException e){
                 System.out.println("Failed to update nurse!");

@@ -28,14 +28,14 @@ public class PatientManager {
         }
         else {
             System.out.println("------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------");
-            System.out.printf("| %-3s | %-10s | %-15s | %-3s | %-5s | %-20s | %-20s | %-15s | %-20s | %-20s | %-20s | %-15s |%n",
-                  "No.", "Patient ID", "Name", "Age", "Gender", "Address", "Diagnosis", "Admission Date", "Discharge Date", "Nurse Assigned", "Address", "Phone");
+            System.out.printf("| %-3s | %-10s | %-15s | %-3s | %-5s | %-30s | %-15s | %-20s | %-15s | %-20s | %-20s |%n",
+                    "No.", "Patient ID", "Name", "Age", "Gender", "Address", "Phone", "Diagnosis", "Admission Date", "Discharge Date", "Nurse Assigned", "Phone");
             System.out.println("------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------");
             for (Patient patient : patients.values()) {
-              System.out.printf("| %-3s |%-11s | %-15s | %-3s | %-6s | %-20s | %-20s | %-15s | %-20s | %-20s | %-20s | %-15s |%n",
-                      patient.getId(), patient.getPatientId().trim(), patient.getName().trim(), patient.getAge(), patient.getGender().trim(), patient.getAddress().trim(),
-                      patient.getDiagnosis().trim(), patient.getAdmissionDate(), patient.getDischargeDate(),
-                      patient.getNurseAssigned().trim(), patient.getAddress().trim(), patient.getPhone().trim());
+                System.out.printf("| %-3s | %-10s | %-15s | %-3s | %-6s | %-30s | %-15s | %-20s | %-15s | %-20s | %-20s |%n",
+                        patient.getId(), patient.getPatientId().trim(), patient.getName().trim(), patient.getAge(), patient.getGender().trim(),
+                        patient.getAddress().trim(), patient.getPhone(), patient.getDiagnosis().trim(),
+                        patient.getAdmissionDate(), patient.getDischargeDate(), patient.getNurseAssigned().trim());
             }
             System.out.println("------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------");
       }
