@@ -3,6 +3,7 @@ package Utils;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.time.LocalDate;
+import java.time.Year;
 import java.time.format.DateTimeFormatter;
 import java.util.Scanner;
 /**
@@ -40,9 +41,22 @@ public class MyValidation {
         }
     }
 
-    public static LocalDate checkDate(String dateString) throws Exception {
+    public static LocalDate checkDate(String date) throws Exception {
         DateTimeFormatter dateFormatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
-        return LocalDate.parse(dateString.trim(), dateFormatter);
+        LocalDate parsedDate = LocalDate.parse(date.trim(), dateFormatter);
+
+        int year = parsedDate.getYear();
+        boolean isLeapYear = Year.of(year).isLeap();
+        int month = parsedDate.getMonthValue();
+        int day = parsedDate.getDayOfMonth();
+
+        // Perform additional date validation here
+        // Example: Check for leap year and February 29
+        if (month == 2 && day == 29 && !isLeapYear) {
+            throw new Exception("Invalid date. Not a leap year.");
+        }
+
+        return parsedDate;
     }
     
     public static boolean isValidDate(String date, String format) {
