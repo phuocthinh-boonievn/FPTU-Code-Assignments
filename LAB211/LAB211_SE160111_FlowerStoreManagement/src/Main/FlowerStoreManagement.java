@@ -4,8 +4,11 @@ import Model.Flower;
 import Model.Order;
 import Utils.Menu;
 import Utils.FileDAO;
+import Manager.FlowersManager;
 import java.util.Scanner;
 import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Set;
 /**
  *
  * @author boonie-pt
@@ -30,8 +33,7 @@ public class FlowerStoreManagement {
         menu.add("  8. Save data");
         menu.add("  9. Load data");
         menu.add("     Others - Exit");
-        
-        HashMap<Integer, Flower> flowers = FileDAO.loadFlowersFromFile(FILE_FLOWERS);
+        Set<Flower> flowersSet = FileDAO.loadFlowerData(FILE_FLOWERS);
 //        HashMap<Integer, Order> orders = FileDAO.loadNursesFromFile(FILE_ORDERS);
         
         boolean cont = true;
@@ -42,7 +44,7 @@ public class FlowerStoreManagement {
 
                     break;
                 case 2:
-                    
+                    FlowersManager.searchFlower(flowersSet);
                     break;
                 case 3:
                     
@@ -60,10 +62,10 @@ public class FlowerStoreManagement {
                     
                     break;
                 case 8:
-                    
+                    FileDAO.displayFlowers(flowersSet);
                     break;
                 case 9:
-                    FileDAO.displayFlowers(flowers);
+                    FileDAO.displayFlowers(flowersSet);
                     break;
                 default:
                     Scanner sc = new Scanner(System.in);
