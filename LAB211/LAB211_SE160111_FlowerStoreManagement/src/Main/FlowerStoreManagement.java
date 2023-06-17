@@ -1,7 +1,6 @@
 package Main;
 
 import Model.Flower;
-import Model.Order;
 import Utils.Menu;
 import Utils.FileDAO;
 import Manager.FlowersManager;
@@ -41,16 +40,16 @@ public class FlowerStoreManagement {
             int choice = menu.getUserChoice();
             switch (choice) {
                 case 1:
-
+                    FlowersManager.addFlower(flowersSet);
                     break;
                 case 2:
                     FlowersManager.searchFlower(flowersSet);
                     break;
                 case 3:
-                    
+                    FlowersManager.updateFlower(flowersSet);
                     break;
                 case 4:
-                    
+                    FlowersManager.deleteFlower(flowersSet);
                     break;
                 case 5:
                     

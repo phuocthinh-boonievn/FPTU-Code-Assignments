@@ -56,16 +56,14 @@ public class FileDAO {
         if (flowers.isEmpty()) {
             System.out.println("\nEMPTY FLOWER LIST!");
         } else {
-            System.out.println("------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------");
-            System.out.printf("| %-3s | %-10s | %-20s | %-15s | %-10s | %-30s |%n",
-                    "No.", "Flower ID", "Description", "Import Date", "Unit Price", "Category");
-            System.out.println("------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------");
-            for (Flower flower : flowers) {
-                System.out.printf("| %-3s | %-10s | %-20s | %-15s | %-10s | %-30s |%n",
+            System.out.println("--------------------------------------------------------------------------------------------------");
+            System.out.printf("| %-3s | %-10s | %-20s | %-15s | %-15s | %-15s |%n",
+                    "No.", "Flower ID", "Description", "Import Date", "Flower Price ($)", "Category");
+            System.out.println("--------------------------------------------------------------------------------------------------");            for (Flower flower : flowers) {
+                System.out.printf("| %-3s | %-10s | %-20s | %-15s | %-16s | %-15s |%n",
                         flower.getId(), flower.getFlowerId().trim(), flower.getDescription().trim(), flower.getImportDate(),
-                        flower.getUnitPrice(), flower.getCategory().trim());
+                         "$ " + flower.getUnitPrice() , flower.getCategory().trim());
             }
-            System.out.println("------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------");
-        }
+            System.out.println("--------------------------------------------------------------------------------------------------");        }
     }
 }
