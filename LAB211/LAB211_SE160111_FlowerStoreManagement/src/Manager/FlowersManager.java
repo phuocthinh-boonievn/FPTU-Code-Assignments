@@ -1,24 +1,23 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package Manager;
 
 import Model.Flower;
+import Model.Order;
+import Model.OrderDetail;
+import Utils.FileDAO;
 import Utils.MyValidation;
 import java.time.LocalDate;
-import java.util.HashMap;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Scanner;
 import java.util.Set;
 
 /**
  *
- * @author PC
+ * @author boonie-pt
  */
 public class FlowersManager {
     
-    public static int incrementFlowerId(Set<Flower> flowers) {
+    public static int incrementFlowerNoId(Set<Flower> flowers) {
         if (flowers.isEmpty()) {
             return 1;
         }
@@ -60,7 +59,7 @@ public class FlowersManager {
         Scanner sc = new Scanner(System.in);
 
         boolean continueAdding = true;
-        int id = incrementFlowerId(flowers);
+        int id = incrementFlowerNoId(flowers);
         String flowerId = "";
         String description = "";
         LocalDate importDate = null;
@@ -68,7 +67,7 @@ public class FlowersManager {
         String category = "";
 
         while (continueAdding) {
-            System.out.println("\nAdd a new flower");
+            System.out.println("\nAdding a new flower");
             System.out.println("-------------------------------");
 
             // ID auto incremental
@@ -229,7 +228,7 @@ public class FlowersManager {
 
                     System.out.print("Enter your choice: ");
                     int choice = sc.nextInt();
-                    sc.nextLine(); // Consume the newline character
+                    sc.nextLine(); 
 
                     switch (choice) {
                         case 1:
@@ -257,7 +256,6 @@ public class FlowersManager {
                                 try {
                                     System.out.print("Enter new unit price of flower: ");
                                     newPrice = Double.parseDouble(sc.nextLine().trim());
-                                    //Check positive age or not 
                                     if (newPrice <= 0) {
                                         System.out.println("Price must be a positive number.");
                                         continue;
@@ -303,15 +301,14 @@ public class FlowersManager {
         }                           
     }
     
-    public static void deleteFlower(Set<Flower> flowers){
-        System.out.println("Flower list: ");
+    public static void deleteFlower(Set<Flower> flowers) throws Exception {
+        System.out.println("Flower list:");
         displayFlowers(flowers);
         Scanner scanner = new Scanner(System.in);
-    
-        System.out.println("Enter the flower ID to delete: ");
-        String flowerId = scanner.nextLine();
 
-        // Check if the flower exists
+        System.out.println("Enter the flower ID to delete:");
+        String flowerId = scanner.nextLine().trim();
+
         Flower flowerToDelete = null;
         for (Flower flower : flowers) {
             if (flower.getFlowerId().trim().equalsIgnoreCase(flowerId)) {
@@ -324,17 +321,36 @@ public class FlowersManager {
             System.out.println("The flower does not exist.");
             return;
         }
-        // Check if the flower is in any order detail
-        // Confirmation message
+
+        List<Order> orders = FileDAO.loadOrderData("orders.dat");
+        boolean flowerExistsInOrderDetail = false;
+        for (Order order : orders) {
+            List<OrderDetail> orderDetails = order.getOrderDetails();
+            for (OrderDetail detail : orderDetails) {
+                if (detail.getFlowerId().equalsIgnoreCase(flowerId)) {
+                    flowerExistsInOrderDetail = true;
+                    break;
+                }
+            }
+            if (flowerExistsInOrderDetail) {
+                break;
+            }
+        }
+
+        if (flowerExistsInOrderDetail) {
+            System.out.println("The flower cannot be deleted as it exists in an order detail.");
+            return;
+        }
+
         System.out.print("Are you sure you want to delete the flower? (Y/N): ");
         String confirmation = scanner.nextLine();
 
         if (confirmation.equalsIgnoreCase("Y")) {
-            // Delete the flower
             flowers.remove(flowerToDelete);
             System.out.println("The flower has been successfully deleted.");
         } else {
             System.out.println("Deletion canceled.");
         }
     }
+
 }

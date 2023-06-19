@@ -4,9 +4,12 @@ import Model.Flower;
 import Utils.Menu;
 import Utils.FileDAO;
 import Manager.FlowersManager;
+import Manager.OrdersManager;
+import Model.Order;
 import java.util.Scanner;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 /**
  *
@@ -33,7 +36,7 @@ public class FlowerStoreManagement {
         menu.add("  9. Load data");
         menu.add("     Others - Exit");
         Set<Flower> flowersSet = FileDAO.loadFlowerData(FILE_FLOWERS);
-//        HashMap<Integer, Order> orders = FileDAO.loadNursesFromFile(FILE_ORDERS);
+        List<Order> orders = FileDAO.loadOrderData(FILE_ORDERS);
         
         boolean cont = true;
         do{
@@ -52,27 +55,28 @@ public class FlowerStoreManagement {
                     FlowersManager.deleteFlower(flowersSet);
                     break;
                 case 5:
-                    
+                    OrdersManager.addOrder(orders);
                     break;
                 case 6:
-                    
+                    OrdersManager.displayOrdersByImportDate(orders);
                     break;
                 case 7:
-                    
+                    OrdersManager.sortOrders(orders);
                     break;
                 case 8:
-                    FileDAO.displayFlowers(flowersSet);
+                    FileDAO.saveFlowerData(flowersSet);
+                    FileDAO.saveOrderData(orders);
                     break;
                 case 9:
-                    FileDAO.displayFlowers(flowersSet);
+                    FileDAO.displayAllData(flowersSet, orders);
                     break;
                 default:
                     Scanner sc = new Scanner(System.in);
-                    System.out.println("Do yo really want to exit the application?");
+                    System.out.println("Do yo really want to exit the application? (Y/N):");
                     String input = sc.nextLine();
                     if (input.equals("yes") || input.equals("y")) {
-                        FileDAO.saveFlowersToFile();
-                        FileDAO.saveOrdersToFile();
+                        FileDAO.saveFlowerData(flowersSet);
+                        FileDAO.saveOrderData(orders);
                         cont = false;
                         break;
                     }
