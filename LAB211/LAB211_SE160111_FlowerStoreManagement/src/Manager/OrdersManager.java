@@ -279,7 +279,7 @@ public class OrdersManager {
             System.out.print("Enter the sort order (ASC / DESC): ");
             String sortOrder = scanner.nextLine().toUpperCase().trim();
 
-            Comparator<Order> comparator = null;
+            Comparator<Order> comparator;
             switch (sortField) {
                 case "id":
                     comparator = Comparator.comparing(Order::getOrderId);
