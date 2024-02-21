@@ -1,0 +1,26 @@
+[
+  {
+    "Code": "001",
+    "Name": "An",
+    "Email": "Developer@gmail.com",
+    "City": "Ho Chi Minh",
+    "Phone": "115",
+    "Classcode": "Net01"
+  },
+  {
+    "Code": "002",
+    "Name": "Lam",
+    "Email": "teacher@gmail.com",
+    "City": "Sai Gon",
+    "Phone": "115",
+    "Classcode": "Net02"
+  },
+  {
+    "Code": "003",
+    "Name": "Thinh",
+    "Email": "thinh@gmail.com",
+    "City": "Cao Lanh",
+    "Phone": "0983241015",
+    "Classcode": "Net02"
+  }
+]

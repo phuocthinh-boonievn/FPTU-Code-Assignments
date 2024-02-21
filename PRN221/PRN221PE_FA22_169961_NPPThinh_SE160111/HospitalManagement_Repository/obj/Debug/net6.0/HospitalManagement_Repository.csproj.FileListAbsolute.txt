@@ -1,0 +1,17 @@
+C:\Users\PC\Desktop\FPT Courses\2024_01_Spring\PRN221\PRN221PE_FA22_169961_NPPThinh_SE160111\HospitalManagement_Repository\bin\Debug\net6.0\HospitalManagement_Repository.deps.json
+C:\Users\PC\Desktop\FPT Courses\2024_01_Spring\PRN221\PRN221PE_FA22_169961_NPPThinh_SE160111\HospitalManagement_Repository\bin\Debug\net6.0\HospitalManagement_Repository.dll
+C:\Users\PC\Desktop\FPT Courses\2024_01_Spring\PRN221\PRN221PE_FA22_169961_NPPThinh_SE160111\HospitalManagement_Repository\bin\Debug\net6.0\HospitalManagement_Repository.pdb
+C:\Users\PC\Desktop\FPT Courses\2024_01_Spring\PRN221\PRN221PE_FA22_169961_NPPThinh_SE160111\HospitalManagement_Repository\bin\Debug\net6.0\HospitalManagement_BusinessObjects.dll
+C:\Users\PC\Desktop\FPT Courses\2024_01_Spring\PRN221\PRN221PE_FA22_169961_NPPThinh_SE160111\HospitalManagement_Repository\bin\Debug\net6.0\HospitalManagement_DAO.dll
+C:\Users\PC\Desktop\FPT Courses\2024_01_Spring\PRN221\PRN221PE_FA22_169961_NPPThinh_SE160111\HospitalManagement_Repository\bin\Debug\net6.0\HospitalManagement_DAO.pdb
+C:\Users\PC\Desktop\FPT Courses\2024_01_Spring\PRN221\PRN221PE_FA22_169961_NPPThinh_SE160111\HospitalManagement_Repository\bin\Debug\net6.0\HospitalManagement_BusinessObjects.pdb
+C:\Users\PC\Desktop\FPT Courses\2024_01_Spring\PRN221\PRN221PE_FA22_169961_NPPThinh_SE160111\HospitalManagement_Repository\obj\Debug\net6.0\HospitalManagement_Repository.csproj.AssemblyReference.cache
+C:\Users\PC\Desktop\FPT Courses\2024_01_Spring\PRN221\PRN221PE_FA22_169961_NPPThinh_SE160111\HospitalManagement_Repository\obj\Debug\net6.0\HospitalManagement_Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\Desktop\FPT Courses\2024_01_Spring\PRN221\PRN221PE_FA22_169961_NPPThinh_SE160111\HospitalManagement_Repository\obj\Debug\net6.0\HospitalManagement_Repository.AssemblyInfoInputs.cache
+C:\Users\PC\Desktop\FPT Courses\2024_01_Spring\PRN221\PRN221PE_FA22_169961_NPPThinh_SE160111\HospitalManagement_Repository\obj\Debug\net6.0\HospitalManagement_Repository.AssemblyInfo.cs
+C:\Users\PC\Desktop\FPT Courses\2024_01_Spring\PRN221\PRN221PE_FA22_169961_NPPThinh_SE160111\HospitalManagement_Repository\obj\Debug\net6.0\HospitalManagement_Repository.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\FPT Courses\2024_01_Spring\PRN221\PRN221PE_FA22_169961_NPPThinh_SE160111\HospitalManagement_Repository\obj\Debug\net6.0\HospitalManagement_Repository.csproj.CopyComplete
+C:\Users\PC\Desktop\FPT Courses\2024_01_Spring\PRN221\PRN221PE_FA22_169961_NPPThinh_SE160111\HospitalManagement_Repository\obj\Debug\net6.0\HospitalManagement_Repository.dll
+C:\Users\PC\Desktop\FPT Courses\2024_01_Spring\PRN221\PRN221PE_FA22_169961_NPPThinh_SE160111\HospitalManagement_Repository\obj\Debug\net6.0\refint\HospitalManagement_Repository.dll
+C:\Users\PC\Desktop\FPT Courses\2024_01_Spring\PRN221\PRN221PE_FA22_169961_NPPThinh_SE160111\HospitalManagement_Repository\obj\Debug\net6.0\HospitalManagement_Repository.pdb
+C:\Users\PC\Desktop\FPT Courses\2024_01_Spring\PRN221\PRN221PE_FA22_169961_NPPThinh_SE160111\HospitalManagement_Repository\obj\Debug\net6.0\ref\HospitalManagement_Repository.dll

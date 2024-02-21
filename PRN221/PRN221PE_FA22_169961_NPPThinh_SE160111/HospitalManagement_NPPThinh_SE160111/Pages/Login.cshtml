@@ -1,0 +1,20 @@
+﻿@page
+@model HospitalManagement_NPPThinh_SE160111.Pages.LoginModel
+@{
+    ViewData["Title"] = "Login";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<form method="post">
+    <div>
+        <label asp-for="Username">Username:</label>
+        <input type="text" id="username" name="Username" />
+    </div>
+    <div>
+        <label asp-for="Password">Password:</label>
+        <input type="password" id="password" name="Password" />
+    </div>
+    <button type="submit">Login</button>
+    <div asp-validation-summary="All" class="text-danger"></div>
+</form>

@@ -9,6 +9,7 @@ import Model.Order;
 import Model.OrderDetail;
 import Utils.FileDAO;
 import Utils.MyValidation;
+import java.time.DateTimeException;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Comparator;
@@ -241,27 +242,32 @@ public class OrdersManager {
                 String startDateString = sc.nextLine().trim();
                 System.out.print("Enter the end date (dd/mm/yyyy): ");
                 String endDateString = sc.nextLine().trim();
-                if (MyValidation.isValidDate(startDateString, "dd/MM/yyyy") && MyValidation.isValidDate(endDateString, "dd/MM/yyyy")) {
-                    LocalDate startDate = MyValidation.checkDate(startDateString);
-                    LocalDate endDate = MyValidation.checkDate(endDateString);
+                try{
+                    if (MyValidation.isValidDate(startDateString, "dd/MM/yyyy") && MyValidation.isValidDate(endDateString, "dd/MM/yyyy")) {
+                        LocalDate startDate = MyValidation.checkDate(startDateString);
+                        LocalDate endDate = MyValidation.checkDate(endDateString);
 
-                    List<Order> filteredOrders = new ArrayList<>();
-                    for (Order order : orders) {
-                        LocalDate orderDate = order.getOrderDate();
-                        if (!orderDate.isBefore(startDate) && !orderDate.isAfter(endDate)) {
-                            filteredOrders.add(order);
+                        List<Order> filteredOrders = new ArrayList<>();
+                        for (Order order : orders) {
+                            LocalDate orderDate = order.getOrderDate();
+                            if (!orderDate.isBefore(startDate) && !orderDate.isAfter(endDate)) {
+                                filteredOrders.add(order);
+                            }
                         }
-                    }
-                    if (filteredOrders.isEmpty()) {
-                        System.out.println("No orders found within the specified date range.");
-                        validImportDate = true;
+                        if (filteredOrders.isEmpty()) {
+                            System.out.println("No orders found within the specified date range.");
+                            validImportDate = true;
+                        } 
+                        else {
+                            displayOrders(filteredOrders);
+                            validImportDate = true;
+                        }
                     } 
                     else {
-                        displayOrders(filteredOrders);
-                        validImportDate = true;
+                        System.out.println("Invalid date format. Please enter a valid date (dd/MM/yyyy).");
                     }
-                } 
-                else {
+                }
+                catch (DateTimeException e){
                     System.out.println("Invalid date format. Please enter a valid date (dd/MM/yyyy).");
                 }
             }

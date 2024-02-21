@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "wCAlCdFKpR5lYt2z7TpCcM/g/iTj6yt1HWPFbE6s7SpN4/Zdz3jfXN1B0CBZS1ZUuv1sNglhCT50U+0i+D2JBw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\PC\\Desktop\\FPT Courses\\2024_01_Spring\\PRN221\\WPF_Student_Mangement\\DemoWPFRepo\\DemoWPFRepo.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\PC\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

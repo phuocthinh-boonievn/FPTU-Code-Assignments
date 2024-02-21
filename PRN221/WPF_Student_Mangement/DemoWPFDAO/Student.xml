@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<students>
+	<student>
+		<code>001</code>
+		<name>An</name>
+		<email>james@dal.ca</email>
+		<city>Halifax</city>
+		<phone>1940001</phone>
+		<classcode>Net01</classcode>
+	</student>
+	<student>
+		<code>002</code>
+		<name>Minh</name>
+		<email>Minh@dal.ca</email>
+		<city>Halifax</city>
+		<phone>4940001</phone>
+		<classcode>Net02</classcode>
+	</student>
+	<student>
+		<code>003</code>
+		<name>Tri</name>
+		<email>Tri@dal.ca</email>
+		<city>Tri</city>
+		<phone>240001</phone>
+		<classcode>Net02</classcode>
+	</student>
+</students>

@@ -1,0 +1,15 @@
+C:\Users\PC\Desktop\FPT Courses\2024_01_Spring\PRN221\WPF_Student_Mangement\DemoWPFDAO\bin\Debug\net6.0\DemoWPFDAO.deps.json
+C:\Users\PC\Desktop\FPT Courses\2024_01_Spring\PRN221\WPF_Student_Mangement\DemoWPFDAO\bin\Debug\net6.0\DemoWPFDAO.dll
+C:\Users\PC\Desktop\FPT Courses\2024_01_Spring\PRN221\WPF_Student_Mangement\DemoWPFDAO\bin\Debug\net6.0\DemoWPFDAO.pdb
+C:\Users\PC\Desktop\FPT Courses\2024_01_Spring\PRN221\WPF_Student_Mangement\DemoWPFDAO\bin\Debug\net6.0\DemoWPFBO.dll
+C:\Users\PC\Desktop\FPT Courses\2024_01_Spring\PRN221\WPF_Student_Mangement\DemoWPFDAO\bin\Debug\net6.0\DemoWPFBO.pdb
+C:\Users\PC\Desktop\FPT Courses\2024_01_Spring\PRN221\WPF_Student_Mangement\DemoWPFDAO\obj\Debug\net6.0\DemoWPFDAO.csproj.AssemblyReference.cache
+C:\Users\PC\Desktop\FPT Courses\2024_01_Spring\PRN221\WPF_Student_Mangement\DemoWPFDAO\obj\Debug\net6.0\DemoWPFDAO.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\Desktop\FPT Courses\2024_01_Spring\PRN221\WPF_Student_Mangement\DemoWPFDAO\obj\Debug\net6.0\DemoWPFDAO.AssemblyInfoInputs.cache
+C:\Users\PC\Desktop\FPT Courses\2024_01_Spring\PRN221\WPF_Student_Mangement\DemoWPFDAO\obj\Debug\net6.0\DemoWPFDAO.AssemblyInfo.cs
+C:\Users\PC\Desktop\FPT Courses\2024_01_Spring\PRN221\WPF_Student_Mangement\DemoWPFDAO\obj\Debug\net6.0\DemoWPFDAO.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\FPT Courses\2024_01_Spring\PRN221\WPF_Student_Mangement\DemoWPFDAO\obj\Debug\net6.0\DemoWPFDAO.csproj.CopyComplete
+C:\Users\PC\Desktop\FPT Courses\2024_01_Spring\PRN221\WPF_Student_Mangement\DemoWPFDAO\obj\Debug\net6.0\DemoWPFDAO.dll
+C:\Users\PC\Desktop\FPT Courses\2024_01_Spring\PRN221\WPF_Student_Mangement\DemoWPFDAO\obj\Debug\net6.0\refint\DemoWPFDAO.dll
+C:\Users\PC\Desktop\FPT Courses\2024_01_Spring\PRN221\WPF_Student_Mangement\DemoWPFDAO\obj\Debug\net6.0\DemoWPFDAO.pdb
+C:\Users\PC\Desktop\FPT Courses\2024_01_Spring\PRN221\WPF_Student_Mangement\DemoWPFDAO\obj\Debug\net6.0\ref\DemoWPFDAO.dll

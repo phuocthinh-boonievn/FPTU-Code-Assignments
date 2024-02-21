@@ -1,0 +1,46 @@
+﻿@page
+@model HospitalManagement_NPPThinh_SE160111.Pages.Accounts.DeleteModel
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Delete</h1>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>StaffAccount</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.StaffAccount.Hrfullname)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.StaffAccount.Hrfullname)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.StaffAccount.Hremail)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.StaffAccount.Hremail)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.StaffAccount.Hrpassword)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.StaffAccount.Hrpassword)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.StaffAccount.StaffRole)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.StaffAccount.StaffRole)
+        </dd>
+    </dl>
+    
+    <form method="post">
+        <input type="hidden" asp-for="StaffAccount.HraccountId" />
+        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        <a asp-page="./Index">Back to List</a>
+    </form>
+</div>

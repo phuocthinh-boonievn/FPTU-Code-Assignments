@@ -181,23 +181,24 @@ public class FlowersManager {
         }
 
         System.out.print("Enter search term: ");
-        String searchTerm = scanner.nextLine();
+        String searchTerm = scanner.nextLine().trim().toLowerCase();
 
         Set<Flower> foundFlowers = new HashSet<>();
-        if (choice == 1) {
-            for (Flower flower : flowers) {
-                if (flower.getFlowerId().trim().equalsIgnoreCase(searchTerm)) {
+        
+        if (choice == 1){
+            for (Flower flower : flowers){
+                if(searchTerm.equals(flower.getFlowerId().trim().toLowerCase())){
                     foundFlowers.add(flower);
                 }
             }
-        } else if (choice == 2) {
-            for (Flower flower : flowers) {
-                if (flower.getDescription().trim().toLowerCase().contains(searchTerm) ) {
+        } 
+        else if (choice == 2){
+            for (Flower flower : flowers){
+                if(flower.getDescription().trim().toLowerCase().contains(searchTerm)){
                     foundFlowers.add(flower);
                 }
             }
         }
-
         displayFlowers(foundFlowers);
     }
 

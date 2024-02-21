@@ -1,0 +1,17 @@
+C:\Users\PC\Desktop\FPT Courses\2024_01_Spring\PRN221\WPF_Student_Mangement\DemoWPFRepo\bin\Debug\net6.0\DemoWPFRepo.deps.json
+C:\Users\PC\Desktop\FPT Courses\2024_01_Spring\PRN221\WPF_Student_Mangement\DemoWPFRepo\bin\Debug\net6.0\DemoWPFRepo.dll
+C:\Users\PC\Desktop\FPT Courses\2024_01_Spring\PRN221\WPF_Student_Mangement\DemoWPFRepo\bin\Debug\net6.0\DemoWPFRepo.pdb
+C:\Users\PC\Desktop\FPT Courses\2024_01_Spring\PRN221\WPF_Student_Mangement\DemoWPFRepo\bin\Debug\net6.0\DemoWPFBO.dll
+C:\Users\PC\Desktop\FPT Courses\2024_01_Spring\PRN221\WPF_Student_Mangement\DemoWPFRepo\bin\Debug\net6.0\DemoWPFDAO.dll
+C:\Users\PC\Desktop\FPT Courses\2024_01_Spring\PRN221\WPF_Student_Mangement\DemoWPFRepo\bin\Debug\net6.0\DemoWPFDAO.pdb
+C:\Users\PC\Desktop\FPT Courses\2024_01_Spring\PRN221\WPF_Student_Mangement\DemoWPFRepo\bin\Debug\net6.0\DemoWPFBO.pdb
+C:\Users\PC\Desktop\FPT Courses\2024_01_Spring\PRN221\WPF_Student_Mangement\DemoWPFRepo\obj\Debug\net6.0\DemoWPFRepo.csproj.AssemblyReference.cache
+C:\Users\PC\Desktop\FPT Courses\2024_01_Spring\PRN221\WPF_Student_Mangement\DemoWPFRepo\obj\Debug\net6.0\DemoWPFRepo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\Desktop\FPT Courses\2024_01_Spring\PRN221\WPF_Student_Mangement\DemoWPFRepo\obj\Debug\net6.0\DemoWPFRepo.AssemblyInfoInputs.cache
+C:\Users\PC\Desktop\FPT Courses\2024_01_Spring\PRN221\WPF_Student_Mangement\DemoWPFRepo\obj\Debug\net6.0\DemoWPFRepo.AssemblyInfo.cs
+C:\Users\PC\Desktop\FPT Courses\2024_01_Spring\PRN221\WPF_Student_Mangement\DemoWPFRepo\obj\Debug\net6.0\DemoWPFRepo.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\FPT Courses\2024_01_Spring\PRN221\WPF_Student_Mangement\DemoWPFRepo\obj\Debug\net6.0\DemoWPFRepo.csproj.CopyComplete
+C:\Users\PC\Desktop\FPT Courses\2024_01_Spring\PRN221\WPF_Student_Mangement\DemoWPFRepo\obj\Debug\net6.0\DemoWPFRepo.dll
+C:\Users\PC\Desktop\FPT Courses\2024_01_Spring\PRN221\WPF_Student_Mangement\DemoWPFRepo\obj\Debug\net6.0\refint\DemoWPFRepo.dll
+C:\Users\PC\Desktop\FPT Courses\2024_01_Spring\PRN221\WPF_Student_Mangement\DemoWPFRepo\obj\Debug\net6.0\DemoWPFRepo.pdb
+C:\Users\PC\Desktop\FPT Courses\2024_01_Spring\PRN221\WPF_Student_Mangement\DemoWPFRepo\obj\Debug\net6.0\ref\DemoWPFRepo.dll
