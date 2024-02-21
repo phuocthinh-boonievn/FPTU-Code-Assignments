@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\PC\\Desktop\\FPT Courses\\2024_01_Spring\\PRN221\\PRN221PE_FA22_169961_NPPThinh_SE160111\\HospitalManagement_DAO\\HospitalManagement_DAO.csproj": {}
+    "C:\\Users\\PEATEA\\Desktop\\FPTU Code\\FPTU-Code-Assignments\\PRN221\\PRN221PE_FA22_169961_NPPThinh_SE160111\\HospitalManagement_DAO\\HospitalManagement_DAO.csproj": {}
   },
   "projects": {
-    "C:\\Users\\PC\\Desktop\\FPT Courses\\2024_01_Spring\\PRN221\\PRN221PE_FA22_169961_NPPThinh_SE160111\\HospitalManagement_BusinessObjects\\HospitalManagement_BusinessObjects.csproj": {
+    "C:\\Users\\PEATEA\\Desktop\\FPTU Code\\FPTU-Code-Assignments\\PRN221\\PRN221PE_FA22_169961_NPPThinh_SE160111\\HospitalManagement_BusinessObjects\\HospitalManagement_BusinessObjects.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\PC\\Desktop\\FPT Courses\\2024_01_Spring\\PRN221\\PRN221PE_FA22_169961_NPPThinh_SE160111\\HospitalManagement_BusinessObjects\\HospitalManagement_BusinessObjects.csproj",
+        "projectUniqueName": "C:\\Users\\PEATEA\\Desktop\\FPTU Code\\FPTU-Code-Assignments\\PRN221\\PRN221PE_FA22_169961_NPPThinh_SE160111\\HospitalManagement_BusinessObjects\\HospitalManagement_BusinessObjects.csproj",
         "projectName": "HospitalManagement_BusinessObjects",
-        "projectPath": "C:\\Users\\PC\\Desktop\\FPT Courses\\2024_01_Spring\\PRN221\\PRN221PE_FA22_169961_NPPThinh_SE160111\\HospitalManagement_BusinessObjects\\HospitalManagement_BusinessObjects.csproj",
-        "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\PC\\Desktop\\FPT Courses\\2024_01_Spring\\PRN221\\PRN221PE_FA22_169961_NPPThinh_SE160111\\HospitalManagement_BusinessObjects\\obj\\",
+        "projectPath": "C:\\Users\\PEATEA\\Desktop\\FPTU Code\\FPTU-Code-Assignments\\PRN221\\PRN221PE_FA22_169961_NPPThinh_SE160111\\HospitalManagement_BusinessObjects\\HospitalManagement_BusinessObjects.csproj",
+        "packagesPath": "C:\\Users\\PEATEA\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\PEATEA\\Desktop\\FPTU Code\\FPTU-Code-Assignments\\PRN221\\PRN221PE_FA22_169961_NPPThinh_SE160111\\HospitalManagement_BusinessObjects\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\My Developer Tools\\Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\PEATEA\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -85,24 +85,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\PC\\Desktop\\FPT Courses\\2024_01_Spring\\PRN221\\PRN221PE_FA22_169961_NPPThinh_SE160111\\HospitalManagement_DAO\\HospitalManagement_DAO.csproj": {
+    "C:\\Users\\PEATEA\\Desktop\\FPTU Code\\FPTU-Code-Assignments\\PRN221\\PRN221PE_FA22_169961_NPPThinh_SE160111\\HospitalManagement_DAO\\HospitalManagement_DAO.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\PC\\Desktop\\FPT Courses\\2024_01_Spring\\PRN221\\PRN221PE_FA22_169961_NPPThinh_SE160111\\HospitalManagement_DAO\\HospitalManagement_DAO.csproj",
+        "projectUniqueName": "C:\\Users\\PEATEA\\Desktop\\FPTU Code\\FPTU-Code-Assignments\\PRN221\\PRN221PE_FA22_169961_NPPThinh_SE160111\\HospitalManagement_DAO\\HospitalManagement_DAO.csproj",
         "projectName": "HospitalManagement_DAO",
-        "projectPath": "C:\\Users\\PC\\Desktop\\FPT Courses\\2024_01_Spring\\PRN221\\PRN221PE_FA22_169961_NPPThinh_SE160111\\HospitalManagement_DAO\\HospitalManagement_DAO.csproj",
-        "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\PC\\Desktop\\FPT Courses\\2024_01_Spring\\PRN221\\PRN221PE_FA22_169961_NPPThinh_SE160111\\HospitalManagement_DAO\\obj\\",
+        "projectPath": "C:\\Users\\PEATEA\\Desktop\\FPTU Code\\FPTU-Code-Assignments\\PRN221\\PRN221PE_FA22_169961_NPPThinh_SE160111\\HospitalManagement_DAO\\HospitalManagement_DAO.csproj",
+        "packagesPath": "C:\\Users\\PEATEA\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\PEATEA\\Desktop\\FPTU Code\\FPTU-Code-Assignments\\PRN221\\PRN221PE_FA22_169961_NPPThinh_SE160111\\HospitalManagement_DAO\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\My Developer Tools\\Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\PEATEA\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -117,8 +117,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\PC\\Desktop\\FPT Courses\\2024_01_Spring\\PRN221\\PRN221PE_FA22_169961_NPPThinh_SE160111\\HospitalManagement_BusinessObjects\\HospitalManagement_BusinessObjects.csproj": {
-                "projectPath": "C:\\Users\\PC\\Desktop\\FPT Courses\\2024_01_Spring\\PRN221\\PRN221PE_FA22_169961_NPPThinh_SE160111\\HospitalManagement_BusinessObjects\\HospitalManagement_BusinessObjects.csproj"
+              "C:\\Users\\PEATEA\\Desktop\\FPTU Code\\FPTU-Code-Assignments\\PRN221\\PRN221PE_FA22_169961_NPPThinh_SE160111\\HospitalManagement_BusinessObjects\\HospitalManagement_BusinessObjects.csproj": {
+                "projectPath": "C:\\Users\\PEATEA\\Desktop\\FPTU Code\\FPTU-Code-Assignments\\PRN221\\PRN221PE_FA22_169961_NPPThinh_SE160111\\HospitalManagement_BusinessObjects\\HospitalManagement_BusinessObjects.csproj"
               }
             }
           }
@@ -148,7 +148,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }

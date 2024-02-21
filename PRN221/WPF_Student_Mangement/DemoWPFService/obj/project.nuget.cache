@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "Z3VGnGmfxEkxiUgsbIulmskZZmioi2pK1XDJsmRc5MQ4EBcVjyoUNkIcs3gZHSAZyoxpK3VzxxIf7cc3UjI6Wg==",
+  "dgSpecHash": "vTXZjXeomhn1KntdGsazZ/Oc6dcl0et1ILhHiIzBo2vv6EMIosmTmvdydliZ+3mQF+Wie2ATsgXVmkM0md+ltA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\PC\\Desktop\\FPT Courses\\2024_01_Spring\\PRN221\\WPF_Student_Mangement\\DemoWPFService\\DemoWPFService.csproj",
+  "projectFilePath": "C:\\Users\\PEATEA\\Desktop\\FPTU Code\\FPTU-Code-Assignments\\PRN221\\WPF_Student_Mangement\\DemoWPFService\\DemoWPFService.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\PC\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+    "C:\\Users\\PEATEA\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
   ],
   "logs": []
 }

@@ -2351,23 +2351,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\PC\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\PEATEA\\.nuget\\packages\\": {},
+    "C:\\My Developer Tools\\Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\PC\\Desktop\\FPT Courses\\2024_01_Spring\\PRN221\\PRN221_ASM_01_SE160111\\PRN221_ASM_01_SE160111\\GUI.csproj",
-      "projectName": "GUI",
-      "projectPath": "C:\\Users\\PC\\Desktop\\FPT Courses\\2024_01_Spring\\PRN221\\PRN221_ASM_01_SE160111\\PRN221_ASM_01_SE160111\\GUI.csproj",
-      "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\PC\\Desktop\\FPT Courses\\2024_01_Spring\\PRN221\\PRN221_ASM_01_SE160111\\PRN221_ASM_01_SE160111\\obj\\",
+      "projectUniqueName": "C:\\Users\\PEATEA\\Desktop\\FPTU Code\\FPTU-Code-Assignments\\PRN221\\PRN221_ASM_01_SE160111\\PRN221_ASM_01_SE160111\\WPF_UI.csproj",
+      "projectName": "WPF_UI",
+      "projectPath": "C:\\Users\\PEATEA\\Desktop\\FPTU Code\\FPTU-Code-Assignments\\PRN221\\PRN221_ASM_01_SE160111\\PRN221_ASM_01_SE160111\\WPF_UI.csproj",
+      "packagesPath": "C:\\Users\\PEATEA\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\PEATEA\\Desktop\\FPTU Code\\FPTU-Code-Assignments\\PRN221\\PRN221_ASM_01_SE160111\\PRN221_ASM_01_SE160111\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "C:\\My Developer Tools\\Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\PEATEA\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -2382,8 +2382,8 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "projectReferences": {
-            "C:\\Users\\PC\\Desktop\\FPT Courses\\2024_01_Spring\\PRN221\\PRN221_ASM_01_SE160111\\WPF_Service\\WPF_Service.csproj": {
-              "projectPath": "C:\\Users\\PC\\Desktop\\FPT Courses\\2024_01_Spring\\PRN221\\PRN221_ASM_01_SE160111\\WPF_Service\\WPF_Service.csproj"
+            "C:\\Users\\PEATEA\\Desktop\\FPTU Code\\FPTU-Code-Assignments\\PRN221\\PRN221_ASM_01_SE160111\\WPF_Service\\WPF_Service.csproj": {
+              "projectPath": "C:\\Users\\PEATEA\\Desktop\\FPTU Code\\FPTU-Code-Assignments\\PRN221\\PRN221_ASM_01_SE160111\\WPF_Service\\WPF_Service.csproj"
             }
           }
         }
@@ -2416,7 +2416,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   }

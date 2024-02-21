@@ -6,7 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
 
-namespace PRN221_ASM_01_SE160111
+namespace WPF_UI
 {
     /// <summary>
     /// Interaction logic for App.xaml

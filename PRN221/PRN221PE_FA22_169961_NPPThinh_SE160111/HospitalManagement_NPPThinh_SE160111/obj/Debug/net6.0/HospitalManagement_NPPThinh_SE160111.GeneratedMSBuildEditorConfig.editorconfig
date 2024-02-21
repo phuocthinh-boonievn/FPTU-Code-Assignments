@@ -9,81 +9,81 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = HospitalManagement_NPPThinh_SE160111
 build_property.RootNamespace = HospitalManagement_NPPThinh_SE160111
-build_property.ProjectDir = C:\Users\PC\Desktop\FPT Courses\2024_01_Spring\PRN221\PRN221PE_FA22_169961_NPPThinh_SE160111\HospitalManagement_NPPThinh_SE160111\
+build_property.ProjectDir = C:\Users\PEATEA\Desktop\FPTU Code\FPTU-Code-Assignments\PRN221\PRN221PE_FA22_169961_NPPThinh_SE160111\HospitalManagement_NPPThinh_SE160111\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\PC\Desktop\FPT Courses\2024_01_Spring\PRN221\PRN221PE_FA22_169961_NPPThinh_SE160111\HospitalManagement_NPPThinh_SE160111
+build_property.MSBuildProjectDirectory = C:\Users\PEATEA\Desktop\FPTU Code\FPTU-Code-Assignments\PRN221\PRN221PE_FA22_169961_NPPThinh_SE160111\HospitalManagement_NPPThinh_SE160111
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/PC/Desktop/FPT Courses/2024_01_Spring/PRN221/PRN221PE_FA22_169961_NPPThinh_SE160111/HospitalManagement_NPPThinh_SE160111/Pages/Accounts/Create.cshtml]
+[C:/Users/PEATEA/Desktop/FPTU Code/FPTU-Code-Assignments/PRN221/PRN221PE_FA22_169961_NPPThinh_SE160111/HospitalManagement_NPPThinh_SE160111/Pages/Accounts/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudHNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PC/Desktop/FPT Courses/2024_01_Spring/PRN221/PRN221PE_FA22_169961_NPPThinh_SE160111/HospitalManagement_NPPThinh_SE160111/Pages/Accounts/Delete.cshtml]
+[C:/Users/PEATEA/Desktop/FPTU Code/FPTU-Code-Assignments/PRN221/PRN221PE_FA22_169961_NPPThinh_SE160111/HospitalManagement_NPPThinh_SE160111/Pages/Accounts/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudHNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PC/Desktop/FPT Courses/2024_01_Spring/PRN221/PRN221PE_FA22_169961_NPPThinh_SE160111/HospitalManagement_NPPThinh_SE160111/Pages/Accounts/Details.cshtml]
+[C:/Users/PEATEA/Desktop/FPTU Code/FPTU-Code-Assignments/PRN221/PRN221PE_FA22_169961_NPPThinh_SE160111/HospitalManagement_NPPThinh_SE160111/Pages/Accounts/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudHNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PC/Desktop/FPT Courses/2024_01_Spring/PRN221/PRN221PE_FA22_169961_NPPThinh_SE160111/HospitalManagement_NPPThinh_SE160111/Pages/Accounts/Edit.cshtml]
+[C:/Users/PEATEA/Desktop/FPTU Code/FPTU-Code-Assignments/PRN221/PRN221PE_FA22_169961_NPPThinh_SE160111/HospitalManagement_NPPThinh_SE160111/Pages/Accounts/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudHNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PC/Desktop/FPT Courses/2024_01_Spring/PRN221/PRN221PE_FA22_169961_NPPThinh_SE160111/HospitalManagement_NPPThinh_SE160111/Pages/Accounts/Index.cshtml]
+[C:/Users/PEATEA/Desktop/FPTU Code/FPTU-Code-Assignments/PRN221/PRN221PE_FA22_169961_NPPThinh_SE160111/HospitalManagement_NPPThinh_SE160111/Pages/Accounts/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudHNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PC/Desktop/FPT Courses/2024_01_Spring/PRN221/PRN221PE_FA22_169961_NPPThinh_SE160111/HospitalManagement_NPPThinh_SE160111/Pages/Doctors/Create.cshtml]
+[C:/Users/PEATEA/Desktop/FPTU Code/FPTU-Code-Assignments/PRN221/PRN221PE_FA22_169961_NPPThinh_SE160111/HospitalManagement_NPPThinh_SE160111/Pages/Doctors/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRG9jdG9yc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PC/Desktop/FPT Courses/2024_01_Spring/PRN221/PRN221PE_FA22_169961_NPPThinh_SE160111/HospitalManagement_NPPThinh_SE160111/Pages/Doctors/Delete.cshtml]
+[C:/Users/PEATEA/Desktop/FPTU Code/FPTU-Code-Assignments/PRN221/PRN221PE_FA22_169961_NPPThinh_SE160111/HospitalManagement_NPPThinh_SE160111/Pages/Doctors/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRG9jdG9yc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PC/Desktop/FPT Courses/2024_01_Spring/PRN221/PRN221PE_FA22_169961_NPPThinh_SE160111/HospitalManagement_NPPThinh_SE160111/Pages/Doctors/Details.cshtml]
+[C:/Users/PEATEA/Desktop/FPTU Code/FPTU-Code-Assignments/PRN221/PRN221PE_FA22_169961_NPPThinh_SE160111/HospitalManagement_NPPThinh_SE160111/Pages/Doctors/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRG9jdG9yc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PC/Desktop/FPT Courses/2024_01_Spring/PRN221/PRN221PE_FA22_169961_NPPThinh_SE160111/HospitalManagement_NPPThinh_SE160111/Pages/Doctors/Edit.cshtml]
+[C:/Users/PEATEA/Desktop/FPTU Code/FPTU-Code-Assignments/PRN221/PRN221PE_FA22_169961_NPPThinh_SE160111/HospitalManagement_NPPThinh_SE160111/Pages/Doctors/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRG9jdG9yc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PC/Desktop/FPT Courses/2024_01_Spring/PRN221/PRN221PE_FA22_169961_NPPThinh_SE160111/HospitalManagement_NPPThinh_SE160111/Pages/Doctors/Index.cshtml]
+[C:/Users/PEATEA/Desktop/FPTU Code/FPTU-Code-Assignments/PRN221/PRN221PE_FA22_169961_NPPThinh_SE160111/HospitalManagement_NPPThinh_SE160111/Pages/Doctors/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRG9jdG9yc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PC/Desktop/FPT Courses/2024_01_Spring/PRN221/PRN221PE_FA22_169961_NPPThinh_SE160111/HospitalManagement_NPPThinh_SE160111/Pages/Error.cshtml]
+[C:/Users/PEATEA/Desktop/FPTU Code/FPTU-Code-Assignments/PRN221/PRN221PE_FA22_169961_NPPThinh_SE160111/HospitalManagement_NPPThinh_SE160111/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PC/Desktop/FPT Courses/2024_01_Spring/PRN221/PRN221PE_FA22_169961_NPPThinh_SE160111/HospitalManagement_NPPThinh_SE160111/Pages/Index.cshtml]
+[C:/Users/PEATEA/Desktop/FPTU Code/FPTU-Code-Assignments/PRN221/PRN221PE_FA22_169961_NPPThinh_SE160111/HospitalManagement_NPPThinh_SE160111/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PC/Desktop/FPT Courses/2024_01_Spring/PRN221/PRN221PE_FA22_169961_NPPThinh_SE160111/HospitalManagement_NPPThinh_SE160111/Pages/Login.cshtml]
+[C:/Users/PEATEA/Desktop/FPTU Code/FPTU-Code-Assignments/PRN221/PRN221PE_FA22_169961_NPPThinh_SE160111/HospitalManagement_NPPThinh_SE160111/Pages/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PC/Desktop/FPT Courses/2024_01_Spring/PRN221/PRN221PE_FA22_169961_NPPThinh_SE160111/HospitalManagement_NPPThinh_SE160111/Pages/Privacy.cshtml]
+[C:/Users/PEATEA/Desktop/FPTU Code/FPTU-Code-Assignments/PRN221/PRN221PE_FA22_169961_NPPThinh_SE160111/HospitalManagement_NPPThinh_SE160111/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PC/Desktop/FPT Courses/2024_01_Spring/PRN221/PRN221PE_FA22_169961_NPPThinh_SE160111/HospitalManagement_NPPThinh_SE160111/Pages/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/PEATEA/Desktop/FPTU Code/FPTU-Code-Assignments/PRN221/PRN221PE_FA22_169961_NPPThinh_SE160111/HospitalManagement_NPPThinh_SE160111/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PC/Desktop/FPT Courses/2024_01_Spring/PRN221/PRN221PE_FA22_169961_NPPThinh_SE160111/HospitalManagement_NPPThinh_SE160111/Pages/_ViewImports.cshtml]
+[C:/Users/PEATEA/Desktop/FPTU Code/FPTU-Code-Assignments/PRN221/PRN221PE_FA22_169961_NPPThinh_SE160111/HospitalManagement_NPPThinh_SE160111/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PC/Desktop/FPT Courses/2024_01_Spring/PRN221/PRN221PE_FA22_169961_NPPThinh_SE160111/HospitalManagement_NPPThinh_SE160111/Pages/_ViewStart.cshtml]
+[C:/Users/PEATEA/Desktop/FPTU Code/FPTU-Code-Assignments/PRN221/PRN221PE_FA22_169961_NPPThinh_SE160111/HospitalManagement_NPPThinh_SE160111/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PC/Desktop/FPT Courses/2024_01_Spring/PRN221/PRN221PE_FA22_169961_NPPThinh_SE160111/HospitalManagement_NPPThinh_SE160111/Pages/Shared/_Layout.cshtml]
+[C:/Users/PEATEA/Desktop/FPTU Code/FPTU-Code-Assignments/PRN221/PRN221PE_FA22_169961_NPPThinh_SE160111/HospitalManagement_NPPThinh_SE160111/Pages/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-etp9t1q6c8

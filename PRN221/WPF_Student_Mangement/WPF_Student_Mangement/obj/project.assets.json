@@ -129,23 +129,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\PC\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\PEATEA\\.nuget\\packages\\": {},
+    "C:\\My Developer Tools\\Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\PC\\Desktop\\FPT Courses\\2024_01_Spring\\PRN221\\WPF_Student_Mangement\\WPF_Student_Mangement\\DemoWPFGUI.csproj",
+      "projectUniqueName": "C:\\Users\\PEATEA\\Desktop\\FPTU Code\\FPTU-Code-Assignments\\PRN221\\WPF_Student_Mangement\\WPF_Student_Mangement\\DemoWPFGUI.csproj",
       "projectName": "DemoWPFGUI",
-      "projectPath": "C:\\Users\\PC\\Desktop\\FPT Courses\\2024_01_Spring\\PRN221\\WPF_Student_Mangement\\WPF_Student_Mangement\\DemoWPFGUI.csproj",
-      "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\PC\\Desktop\\FPT Courses\\2024_01_Spring\\PRN221\\WPF_Student_Mangement\\WPF_Student_Mangement\\obj\\",
+      "projectPath": "C:\\Users\\PEATEA\\Desktop\\FPTU Code\\FPTU-Code-Assignments\\PRN221\\WPF_Student_Mangement\\WPF_Student_Mangement\\DemoWPFGUI.csproj",
+      "packagesPath": "C:\\Users\\PEATEA\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\PEATEA\\Desktop\\FPTU Code\\FPTU-Code-Assignments\\PRN221\\WPF_Student_Mangement\\WPF_Student_Mangement\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "C:\\My Developer Tools\\Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\PEATEA\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -160,8 +160,8 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "projectReferences": {
-            "C:\\Users\\PC\\Desktop\\FPT Courses\\2024_01_Spring\\PRN221\\WPF_Student_Mangement\\DemoWPFService\\DemoWPFService.csproj": {
-              "projectPath": "C:\\Users\\PC\\Desktop\\FPT Courses\\2024_01_Spring\\PRN221\\WPF_Student_Mangement\\DemoWPFService\\DemoWPFService.csproj"
+            "C:\\Users\\PEATEA\\Desktop\\FPTU Code\\FPTU-Code-Assignments\\PRN221\\WPF_Student_Mangement\\DemoWPFService\\DemoWPFService.csproj": {
+              "projectPath": "C:\\Users\\PEATEA\\Desktop\\FPTU Code\\FPTU-Code-Assignments\\PRN221\\WPF_Student_Mangement\\DemoWPFService\\DemoWPFService.csproj"
             }
           }
         }
@@ -200,7 +200,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   }
