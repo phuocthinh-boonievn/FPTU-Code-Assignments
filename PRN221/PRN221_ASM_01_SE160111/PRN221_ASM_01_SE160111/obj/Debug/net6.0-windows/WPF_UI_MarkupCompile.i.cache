@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 C:\Users\PEATEA\Desktop\FPTU Code\FPTU-Code-Assignments\PRN221\PRN221_ASM_01_SE160111\PRN221_ASM_01_SE160111\App.xaml
-2-1103506202
+4488858624
 
-6-1544478390
+81983403789
 224-1594080690
-Login.xaml;PCManagement.xaml;
+AccountManagement.xaml;Login.xaml;PCDetail.xaml;PCManagement.xaml;
 
 True
 

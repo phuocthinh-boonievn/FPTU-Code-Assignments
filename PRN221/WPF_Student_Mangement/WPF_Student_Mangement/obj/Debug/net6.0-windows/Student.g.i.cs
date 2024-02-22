@@ -157,7 +157,7 @@ namespace DemoWPFGUI {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/DemoWPFGUI;V1.0.0.0;component/student.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/DemoWPFGUI;component/student.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\Student.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

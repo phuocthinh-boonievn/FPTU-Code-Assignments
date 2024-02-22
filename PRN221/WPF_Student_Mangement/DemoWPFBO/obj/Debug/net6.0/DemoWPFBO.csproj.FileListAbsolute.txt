@@ -10,3 +10,15 @@ C:\Users\PC\Desktop\FPT Courses\2024_01_Spring\PRN221\WPF_Student_Mangement\Demo
 C:\Users\PC\Desktop\FPT Courses\2024_01_Spring\PRN221\WPF_Student_Mangement\DemoWPFBO\obj\Debug\net6.0\refint\DemoWPFBO.dll
 C:\Users\PC\Desktop\FPT Courses\2024_01_Spring\PRN221\WPF_Student_Mangement\DemoWPFBO\obj\Debug\net6.0\DemoWPFBO.pdb
 C:\Users\PC\Desktop\FPT Courses\2024_01_Spring\PRN221\WPF_Student_Mangement\DemoWPFBO\obj\Debug\net6.0\ref\DemoWPFBO.dll
+C:\Users\PEATEA\Desktop\FPTU Code\FPTU-Code-Assignments\PRN221\WPF_Student_Mangement\DemoWPFBO\bin\Debug\net6.0\DemoWPFBO.deps.json
+C:\Users\PEATEA\Desktop\FPTU Code\FPTU-Code-Assignments\PRN221\WPF_Student_Mangement\DemoWPFBO\bin\Debug\net6.0\DemoWPFBO.dll
+C:\Users\PEATEA\Desktop\FPTU Code\FPTU-Code-Assignments\PRN221\WPF_Student_Mangement\DemoWPFBO\bin\Debug\net6.0\DemoWPFBO.pdb
+C:\Users\PEATEA\Desktop\FPTU Code\FPTU-Code-Assignments\PRN221\WPF_Student_Mangement\DemoWPFBO\obj\Debug\net6.0\DemoWPFBO.csproj.AssemblyReference.cache
+C:\Users\PEATEA\Desktop\FPTU Code\FPTU-Code-Assignments\PRN221\WPF_Student_Mangement\DemoWPFBO\obj\Debug\net6.0\DemoWPFBO.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PEATEA\Desktop\FPTU Code\FPTU-Code-Assignments\PRN221\WPF_Student_Mangement\DemoWPFBO\obj\Debug\net6.0\DemoWPFBO.AssemblyInfoInputs.cache
+C:\Users\PEATEA\Desktop\FPTU Code\FPTU-Code-Assignments\PRN221\WPF_Student_Mangement\DemoWPFBO\obj\Debug\net6.0\DemoWPFBO.AssemblyInfo.cs
+C:\Users\PEATEA\Desktop\FPTU Code\FPTU-Code-Assignments\PRN221\WPF_Student_Mangement\DemoWPFBO\obj\Debug\net6.0\DemoWPFBO.csproj.CoreCompileInputs.cache
+C:\Users\PEATEA\Desktop\FPTU Code\FPTU-Code-Assignments\PRN221\WPF_Student_Mangement\DemoWPFBO\obj\Debug\net6.0\DemoWPFBO.dll
+C:\Users\PEATEA\Desktop\FPTU Code\FPTU-Code-Assignments\PRN221\WPF_Student_Mangement\DemoWPFBO\obj\Debug\net6.0\refint\DemoWPFBO.dll
+C:\Users\PEATEA\Desktop\FPTU Code\FPTU-Code-Assignments\PRN221\WPF_Student_Mangement\DemoWPFBO\obj\Debug\net6.0\DemoWPFBO.pdb
+C:\Users\PEATEA\Desktop\FPTU Code\FPTU-Code-Assignments\PRN221\WPF_Student_Mangement\DemoWPFBO\obj\Debug\net6.0\ref\DemoWPFBO.dll

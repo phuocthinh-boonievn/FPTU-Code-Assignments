@@ -14,6 +14,7 @@ CREATE TABLE "Computer Electronics"(
     "productID" SMALLINT NOT NULL UNIQUE,
     "title" NVARCHAR(255) NOT NULL,
     "description" BIGINT NOT NULL,
+    "price" BIGINT NOT NULL,
     "imageLink" NVARCHAR(255) NULL,
     "review" BIGINT NULL,
     "status" BIT NOT NULL,
@@ -33,6 +34,7 @@ CREATE TABLE "Accounts"(
     "userID" SMALLINT NOT NULL UNIQUE,
     "username" NVARCHAR(255) NOT NULL,
     "password" NVARCHAR(255) NOT NULL,
+    "status" BIT NOT NULL,
     "role" BIGINT NOT NULL
 );
 ALTER TABLE
