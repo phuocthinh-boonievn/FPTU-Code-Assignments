@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using WPF_BO.Models;
+using WPF_BO;
 
-namespace WPF_Repository
+namespace WPF_Service
 {
     public interface IAccountService
     {

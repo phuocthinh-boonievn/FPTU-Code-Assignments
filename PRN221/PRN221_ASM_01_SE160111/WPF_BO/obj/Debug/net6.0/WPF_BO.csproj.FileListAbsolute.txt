@@ -12,3 +12,17 @@ C:\Users\PC\Desktop\FPT Courses\2024_01_Spring\PRN221\PRN221_ASM_01_SE160111\WPF
 C:\Users\PC\Desktop\FPT Courses\2024_01_Spring\PRN221\PRN221_ASM_01_SE160111\WPF_BO\obj\Debug\net6.0\ref\WPF_BO.dll
 C:\Users\PC\Desktop\FPT Courses\2024_01_Spring\PRN221\PRN221_ASM_01_SE160111\WPF_BO\bin\Debug\net6.0\WPF_BO.runtimeconfig.json
 C:\Users\PC\Desktop\FPT Courses\2024_01_Spring\PRN221\PRN221_ASM_01_SE160111\WPF_BO\obj\Debug\net6.0\WPF_BO.genruntimeconfig.cache
+C:\Users\PC\Desktop\FPT Code\FPTU-Code-Assignments\PRN221\PRN221_ASM_01_SE160111\WPF_BO\bin\Debug\net6.0\WPF_BO.deps.json
+C:\Users\PC\Desktop\FPT Code\FPTU-Code-Assignments\PRN221\PRN221_ASM_01_SE160111\WPF_BO\bin\Debug\net6.0\WPF_BO.runtimeconfig.json
+C:\Users\PC\Desktop\FPT Code\FPTU-Code-Assignments\PRN221\PRN221_ASM_01_SE160111\WPF_BO\bin\Debug\net6.0\WPF_BO.dll
+C:\Users\PC\Desktop\FPT Code\FPTU-Code-Assignments\PRN221\PRN221_ASM_01_SE160111\WPF_BO\bin\Debug\net6.0\WPF_BO.pdb
+C:\Users\PC\Desktop\FPT Code\FPTU-Code-Assignments\PRN221\PRN221_ASM_01_SE160111\WPF_BO\obj\Debug\net6.0\WPF_BO.csproj.AssemblyReference.cache
+C:\Users\PC\Desktop\FPT Code\FPTU-Code-Assignments\PRN221\PRN221_ASM_01_SE160111\WPF_BO\obj\Debug\net6.0\WPF_BO.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\Desktop\FPT Code\FPTU-Code-Assignments\PRN221\PRN221_ASM_01_SE160111\WPF_BO\obj\Debug\net6.0\WPF_BO.AssemblyInfoInputs.cache
+C:\Users\PC\Desktop\FPT Code\FPTU-Code-Assignments\PRN221\PRN221_ASM_01_SE160111\WPF_BO\obj\Debug\net6.0\WPF_BO.AssemblyInfo.cs
+C:\Users\PC\Desktop\FPT Code\FPTU-Code-Assignments\PRN221\PRN221_ASM_01_SE160111\WPF_BO\obj\Debug\net6.0\WPF_BO.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\FPT Code\FPTU-Code-Assignments\PRN221\PRN221_ASM_01_SE160111\WPF_BO\obj\Debug\net6.0\WPF_BO.dll
+C:\Users\PC\Desktop\FPT Code\FPTU-Code-Assignments\PRN221\PRN221_ASM_01_SE160111\WPF_BO\obj\Debug\net6.0\refint\WPF_BO.dll
+C:\Users\PC\Desktop\FPT Code\FPTU-Code-Assignments\PRN221\PRN221_ASM_01_SE160111\WPF_BO\obj\Debug\net6.0\WPF_BO.pdb
+C:\Users\PC\Desktop\FPT Code\FPTU-Code-Assignments\PRN221\PRN221_ASM_01_SE160111\WPF_BO\obj\Debug\net6.0\WPF_BO.genruntimeconfig.cache
+C:\Users\PC\Desktop\FPT Code\FPTU-Code-Assignments\PRN221\PRN221_ASM_01_SE160111\WPF_BO\obj\Debug\net6.0\ref\WPF_BO.dll

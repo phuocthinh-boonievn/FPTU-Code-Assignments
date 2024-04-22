@@ -3,19 +3,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using WPF_BO.Models;
+using WPF_BO;
 
 namespace WPF_DAO
 {
     public class AccountDAO
     {
         private static AccountDAO instance = null;
-        private readonly ManagementWPFContext dBContext = null;
+        private readonly wpfManagementContext dBContext = null;
         public AccountDAO()
         {
             if (dBContext == null)
             {
-                dBContext = new ManagementWPFContext();
+                dBContext = new wpfManagementContext();
             }
         }
         public static AccountDAO Instance

@@ -1,4 +1,4 @@
-﻿using WPF_BO.Models;
+﻿using WPF_BO;
 using WPF_DAO;
 
 namespace WPF_Repository

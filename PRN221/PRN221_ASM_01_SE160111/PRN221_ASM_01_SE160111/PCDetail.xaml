@@ -5,8 +5,286 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPF_UI"
         mc:Ignorable="d"
-        Title="PCDetail" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+        Title="ProductMangement" Height="400" Width="450"
+        WindowStyle="None"
+        WindowStartupLocation="CenterScreen"
+        Background="Transparent"
+        AllowsTransparency="True">
+    <Border CornerRadius="50">
+        <Border CornerRadius="20"   
+            BorderThickness="5"
+            Opacity="0.95" Margin="0,0,0,0">
+            <Border.BorderBrush>
+                <LinearGradientBrush StartPoint="1,0" EndPoint="1,1">
+                    <GradientStop Color="#65029e" Offset="0"/>
+                    <GradientStop Color="#3b029e" Offset="0.75"/>
+                    <GradientStop Color="#8a16c1" Offset="0.1"/>
+                </LinearGradientBrush>
+            </Border.BorderBrush>
+            <Border.Background>
+                <LinearGradientBrush StartPoint="0,1" EndPoint="1,0">
+                    <GradientStop Color="#65029e" Offset="0"/>
+                    <GradientStop Color="#200d4a" Offset="0.75"/>
+                </LinearGradientBrush>
+            </Border.Background>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="16*"/>
+                    <RowDefinition Height="317*"/>
+                </Grid.RowDefinitions>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition Width="25"/>
+                        <ColumnDefinition Width="25"/>
+                        <ColumnDefinition Width="5"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock 
+                           x:Name="txtMode"
+                           Foreground="LightGray"
+                           FontSize="12"
+                           FontFamily="Montserrat"
+                           Grid.Column="0"
+                           VerticalAlignment="Center"
+                           Margin="10,0,0,0"/>
+                    <Button x:Name="btnMinimize"
+                        BorderThickness="0"
+                        Content="-"
+                        Foreground="Black"
+                        FontSize="16"
+                        FontFamily="Monsterrat"
+                        Cursor="Hand"
+                        Grid.Column="1"
+                        Click="btnMinimize_Click">
+                        <Button.Style>
+                            <Style TargetType="Button">
+                                <Setter Property="Background" Value="Azure"/>
+                                <Style.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter Property="Background" Value="#28aeed"/>
+                                    </Trigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Button.Style>
+                        <Button.Template>
+                            <ControlTemplate TargetType="Button">
+                                <Border Width="18" Height="18"
+                                    CornerRadius="8"
+                                    Background="{TemplateBinding Background}">
+                                    <ContentPresenter VerticalAlignment="Center"
+                                                  HorizontalAlignment="Center"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Button x:Name="btnClose"
+                        BorderThickness="0"
+                        Content="x"
+                        Foreground="Black"
+                        FontSize="12"
+                        FontFamily="Monsterrat"
+                        Cursor="Hand"
+                        Grid.Column="2"
+                        Click="btnClose_Click">
+                        <Button.Style>
+                            <Style TargetType="Button">
+                                <Setter Property="Background" Value="Azure"/>
+                                <Style.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter Property="Background" Value="OrangeRed"/>
+                                    </Trigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Button.Style>
+                        <Button.Template>
+                            <ControlTemplate TargetType="Button">
+                                <Border Width="18" Height="18"
+                                    CornerRadius="8"
+                                    Background="{TemplateBinding Background}">
+                                    <ContentPresenter VerticalAlignment="Center"
+                                                  HorizontalAlignment="Center"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Button x:Name="btnAction"
+                        BorderThickness="0"
+                        Content="Action"
+                        Foreground="White"
+                        FontSize="16"
+                        FontFamily="Monsterrat"
+                        Cursor="Hand"
+                        Click="btnAction_Click" Margin="129,317,153,-323" RenderTransformOrigin="0.423,0.153">
+                        <Button.Style>
+                            <Style TargetType="Button">
+                                <Setter Property="Background" Value="#7123b0"/>
+                                <Style.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter Property="Background" Value="#5a85c4"/>
+                                    </Trigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Button.Style>
+                        <Button.Template>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <Border Width="100" Height="30"
+                                    CornerRadius="8"
+                                    Background="{TemplateBinding Background}">
+                                    <ContentPresenter VerticalAlignment="Center"
+                                        HorizontalAlignment="Center"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Button x:Name="btnCancel"
+                        BorderThickness="0"
+                        Content="Cancel"
+                        Foreground="White"
+                        FontSize="16"
+                        FontFamily="Monsterrat"
+                        Cursor="Hand"
+                        Click="btnCancel_Click" Margin="255,317,0,-323" RenderTransformOrigin="0.423,0.153">
+                        <Button.Style>
+                            <Style TargetType="{x:Type Button}">
+                                <Setter Property="Background" Value="#7123b0"/>
+                                <Style.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter Property="Background" Value="#5a85c4"/>
+                                    </Trigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Button.Style>
+                        <Button.Template>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <Border Width="100" Height="30"
+                                    CornerRadius="8"
+                                    Background="{TemplateBinding Background}">
+                                    <ContentPresenter VerticalAlignment="Center"
+                                        HorizontalAlignment="Center"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                </Grid>
+                <TextBlock Text="Title"
+                    Foreground="White"
+                    FontSize="15"
+                    FontFamily="Monsterrat"
+                    FontWeight="Medium"
+                    HorizontalAlignment="Left" Margin="10,3,0,311" Grid.Row="2" Height="NaN"/>
+                <TextBlock Text="Price"
+                    Foreground="White"
+                    FontSize="15"
+                    FontFamily="Monsterrat"
+                    FontWeight="Medium"
+                    HorizontalAlignment="Left" Margin="10,50,0,278" Grid.Row="2"/>
+                <TextBlock Text="Description"
+                    Foreground="White"
+                    FontSize="15"
+                    FontFamily="Monsterrat"
+                    FontWeight="Medium"
+                    HorizontalAlignment="Left" Margin="10,106,0,67" Grid.Row="2" Height="NaN"/>
+                <TextBlock Text="Review"
+                    Foreground="White"
+                    FontSize="15"
+                    FontFamily="Monsterrat"
+                    FontWeight="Medium"
+                    HorizontalAlignment="Left" Margin="10,161,0,150" Grid.Row="2" Height="NaN"/>
+                <TextBlock Text="Status"
+                    Foreground="White"
+                    FontSize="15"
+                    FontFamily="Monsterrat"
+                    FontWeight="Medium"
+                    HorizontalAlignment="Left" Margin="13,211,0,81" Grid.Row="2" Height="NaN"/>
+                <TextBox x:Name="txtTitle"
+                    FontSize="13"
+                    FontWeight="Medium"
+                    Foreground="White"
+                    CaretBrush="LightGray"
+                    BorderBrush="DarkGray"
+                    BorderThickness="0,0,0,1"
+                    Height="28"
+                    VerticalContentAlignment="Center"
+                    Margin="111,5,24,327"
+                    Padding="20,0,0,0" Grid.Row="1" Width="NaN" Grid.RowSpan="2">
+                    <TextBox.Background>
+                        <ImageBrush 
+                            Stretch="None"
+                            AlignmentX="Left"/>
+                    </TextBox.Background>
+                </TextBox>
+                <TextBox x:Name="txtPrice"
+                    FontSize="13"
+                    FontWeight="Medium"
+                    Foreground="White"
+                    CaretBrush="LightGray"
+                    BorderBrush="DarkGray"
+                    BorderThickness="0,0,0,1"
+                    Height="28"
+                    VerticalContentAlignment="Center"
+                    Margin="111,37,24,278"
+                    Padding="20,0,0,0" Grid.Row="2" Width="NaN">
+                    <TextBox.Background>
+                        <ImageBrush 
+                            Stretch="None"
+                            AlignmentX="Left"/>
+                    </TextBox.Background>
+                </TextBox>
+                <TextBox x:Name="txtDesc"
+                    FontSize="13"
+                    FontWeight="Medium"
+                    Foreground="White"
+                    CaretBrush="LightGray"
+                    BorderBrush="DarkGray"
+                    BorderThickness="0,0,0,1"
+                    Height="28"
+                    VerticalContentAlignment="Center"
+                    Margin="111,89,24,226"
+                    Padding="20,0,0,0" Grid.Row="2" Width="NaN">
+                    <TextBox.Background>
+                        <ImageBrush 
+                            Stretch="None"
+                            AlignmentX="Left"/>
+                    </TextBox.Background>
+                </TextBox>
+                <TextBox x:Name="txtReview"
+                    FontSize="13"
+                    FontWeight="Medium"
+                    Foreground="White"
+                    CaretBrush="LightGray"
+                    BorderBrush="DarkGray"
+                    BorderThickness="0,0,0,1"
+                    Height="28"
+                    VerticalContentAlignment="Center"
+                    Margin="111,141,24,174"
+                    Padding="20,0,0,0" Grid.Row="2" Width="NaN">
+                    <TextBox.Background>
+                        <ImageBrush 
+                            Stretch="None"
+                            AlignmentX="Left"/>
+                    </TextBox.Background>
+                </TextBox>
+                <TextBox x:Name="txtStatus"
+                    FontSize="13"
+                    FontWeight="Medium"
+                    Foreground="White"
+                    BorderBrush="DarkGray"
+                    BorderThickness="0,0,0,1"
+                    Height="28"
+                    VerticalContentAlignment="Center"
+                    Margin="111,205,24,110"
+                    Padding="20,0,0,0" Grid.Row="2" Width="NaN">
+                    <TextBox.Background>
+                        <ImageBrush 
+                            Stretch="None"
+                            AlignmentX="Left"/>
+                    </TextBox.Background>
+                </TextBox>
+            </Grid>
+
+        </Border>
+    </Border>
+
 </Window>

@@ -1,0 +1,90 @@
+﻿@page
+@model Equipments_NPPThinh.Pages.EquipmentListModel
+
+@{
+    var type = HttpContext.Session.GetString("Type");
+}
+<style>
+    .table-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    th, td {
+        padding: 8px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
+
+    thead th {
+        background-color: #f2f2f2;
+    }
+</style>
+
+@if (type == "1")
+{
+    <div class="button-container">
+        <a asp-page="./CreateProduct" class="create-button">Create</a>
+    </div>
+}
+
+<div class="table-container">
+<table>
+        <thead>
+            <tr>
+                <th>Equipement Code</th>
+                <th>Equipement Name</th>
+                <th>Equipement Description</th>
+                <th>Model</th>
+                <th>
+                    Supplier Name
+                </th>
+                <th>Quantity</th>
+                <th>Created Date</th>
+                <th>Room</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var equipment in Model.Equipments)
+            {
+                <tr>
+                    <td>@equipment.EqCode</td>
+                    <td>@equipment.EqName</td>
+                    <td>@equipment.Description</td>
+                    <td>@equipment.Model</td>
+                    <td>@equipment.SupplierName</td>
+                    <td>@equipment.Quantity</td>
+                    <td>@equipment.CreatedAt</td>
+                     <td>@*@eyeglass.Room.RoomId*@</td>
+                    @if (type == "1")
+                    {
+                        <td style="display: flex;">
+                            <a asp-page="./EquipmentUpdate" asp-route-EqId="@equipment.EqId" class="btn btn-primary">Update</a>
+
+                            <a asp-page="./EquipmentDelete" asp-route-EqId="@equipment.EqId" class="btn btn-primary">Delete</a>
+                        </td>
+                    }
+                </tr>
+            }
+        </tbody>
+</table>
+</div>
+<!-- Hiển thị phân trang -->
+<div>
+    <nav aria-label="Page navigation">
+        <ul class="pagination">
+            @for (int i = 1; i <= Model.TotalPages; i++)
+            {
+                <li class="page-item @(Model.PageIndex == i ? "active" : "")">
+                    <a class="page-link" href="/EquipmentList?pageIndex=@i&searchString=@Model.SearchString">@i</a>
+                </li>
+            }
+        </ul>
+    </nav>
+</div>

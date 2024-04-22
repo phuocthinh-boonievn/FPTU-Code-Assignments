@@ -11,6 +11,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using WPF_BO;
+using WPF_Service;
 
 namespace WPF_UI
 {
@@ -19,11 +21,12 @@ namespace WPF_UI
     /// </summary>
     public partial class Login : Window
     {
-        const string loginName = "ad";
-        const string loginPass = "123";
+        private readonly IAccountService accountService;
+        public static long AuthenAccount { get; set; }
         public Login()
         {
             InitializeComponent();
+            accountService = new AccountService();
         }
 
         private void btnMinimize_Click(object sender, RoutedEventArgs e)
@@ -38,15 +41,35 @@ namespace WPF_UI
 
         private void btnLogin_Click(object sender, RoutedEventArgs e)
         {
-            if (txtUsername.Text != loginName || txtPassword.Password != loginPass)
+            try
             {
-                MessageBox.Show("Login error! Recheck your credentials!");
+                Account acc = accountService.GetAccount(txtUsername.Text);
+                if (txtUsername.Text == null || txtPassword.Password == null)
+                {
+                    MessageBox.Show("Login error! Recheck your credentials!");
+                }
+                else if (acc == null)
+                {
+                    MessageBox.Show("Login error! Recheck your credentials!");
+                }
+                else if (acc != null && acc.Password != txtPassword.Password)
+                {
+                    MessageBox.Show("Login error! Wrong password!");
+                }
+                else
+                {
+                    MessageBox.Show("Login succesfull!");
+                    AuthenAccount = acc.Role;
+                    this.Hide();
+                    PCManagement pcManagement = new PCManagement(AuthenAccount);
+                    pcManagement.Show();
+                }
             }
-            else
+            catch (Exception ex)
             {
-                this.Hide();
-                new PCManagement().Show();
+                MessageBox.Show(ex.Message);
             }
+            
         }
     }
 }

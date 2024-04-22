@@ -121,7 +121,7 @@
                         FontSize="16"
                         FontFamily="Monsterrat"
                         Cursor="Hand"
-                        Click="btnSearch_Click" Margin="443,327,188,-333" RenderTransformOrigin="0.423,0.153">
+                        Click="btnSearch_Click" Margin="264,304,367,-310" RenderTransformOrigin="0.423,0.153">
                         <Button.Style>
                             <Style TargetType="Button">
                                 <Setter Property="Background" Value="#7123b0"/>
@@ -150,7 +150,7 @@
                         FontSize="16"
                         FontFamily="Monsterrat"
                         Cursor="Hand"
-                        Click="btnSearch_Click" Margin="443,73,188,-79" RenderTransformOrigin="0.423,0.153">
+                        Click="btnAdd_Click" Margin="430,37,201,-43" RenderTransformOrigin="0.423,0.153">
                         <Button.Style>
                             <Style TargetType="{x:Type Button}">
                                 <Setter Property="Background" Value="#7123b0"/>
@@ -179,7 +179,7 @@
                         FontSize="16"
                         FontFamily="Monsterrat"
                         Cursor="Hand"
-                        Click="btnSearch_Click" Margin="443,132,188,-138" RenderTransformOrigin="0.423,0.153">
+                        Click="btnEdit_Click" Margin="430,96,201,-102" RenderTransformOrigin="0.423,0.153">
                         <Button.Style>
                             <Style TargetType="{x:Type Button}">
                                 <Setter Property="Background" Value="#7123b0"/>
@@ -208,7 +208,7 @@
                         FontSize="16"
                         FontFamily="Monsterrat"
                         Cursor="Hand"
-                        Click="btnSearch_Click" Margin="443,195,188,-201" RenderTransformOrigin="0.423,0.153">
+                        Click="btnDelete_Click" Margin="430,159,201,-165" RenderTransformOrigin="0.423,0.153">
                         <Button.Style>
                             <Style TargetType="{x:Type Button}">
                                 <Setter Property="Background" Value="#7123b0"/>
@@ -230,14 +230,14 @@
                             </ControlTemplate>
                         </Button.Template>
                     </Button>
-                    <Button x:Name="btnManageAccount"
+                    <Button x:Name="btnLoad"
                         BorderThickness="0"
-                        Content="Manage accounts"
+                        Content="Load"
                         Foreground="White"
                         FontSize="16"
                         FontFamily="Monsterrat"
                         Cursor="Hand"
-                        Click="btnManageAccount_Click" Margin="572,68,10,-84" RenderTransformOrigin="0.423,0.153">
+                        Click="btnLoad_Click" Margin="135,304,496,-310" RenderTransformOrigin="0.423,0.153">
                         <Button.Style>
                             <Style TargetType="{x:Type Button}">
                                 <Setter Property="Background" Value="#7123b0"/>
@@ -250,7 +250,7 @@
                         </Button.Style>
                         <Button.Template>
                             <ControlTemplate TargetType="{x:Type Button}">
-                                <Border Width="150" Height="30"
+                                <Border Width="100" Height="30"
                                     CornerRadius="8"
                                     Background="{TemplateBinding Background}">
                                     <ContentPresenter VerticalAlignment="Center"
@@ -259,20 +259,20 @@
                             </ControlTemplate>
                         </Button.Template>
                     </Button>
-                    <Button x:Name="btnLoad"
+                    <Button x:Name="btnLogout"
                         BorderThickness="0"
-                        Content="Load"
+                        Content="LOG OUT"
                         Foreground="White"
                         FontSize="16"
                         FontFamily="Monsterrat"
                         Cursor="Hand"
-                        Click="btnLoad_Click" Margin="443,262,188,-268" RenderTransformOrigin="0.423,0.153">
+                        Click="btnLogout_Click" Margin="594,159,37,-165" RenderTransformOrigin="0.423,0.153">
                         <Button.Style>
                             <Style TargetType="{x:Type Button}">
                                 <Setter Property="Background" Value="#7123b0"/>
                                 <Style.Triggers>
                                     <Trigger Property="IsMouseOver" Value="True">
-                                        <Setter Property="Background" Value="#5a85c4"/>
+                                        <Setter Property="Background" Value="OrangeRed"/>
                                     </Trigger>
                                 </Style.Triggers>
                             </Style>
@@ -313,24 +313,22 @@
                     FontSize="15"
                     FontFamily="Monsterrat"
                     FontWeight="Medium"
-                    HorizontalAlignment="Left" Margin="10,146,0,263" Grid.Row="2" Height="NaN"/>
+                    HorizontalAlignment="Left" Margin="10,149,0,400" Grid.Row="2" Height="NaN"/>
                 <TextBlock Text="Status"
                     Foreground="White"
                     FontSize="15"
                     FontFamily="Monsterrat"
                     FontWeight="Medium"
-                    HorizontalAlignment="Left" Margin="13,210,0,205" Grid.Row="2" Height="NaN"/>
+                    HorizontalAlignment="Left" Margin="13,199,0,331" Grid.Row="2" Height="NaN"/>
                 <TextBox x:Name="txtSearch"
-                    Text="Search for a PC..."
                     FontSize="13"
                     FontWeight="Medium"
                     Foreground="DarkGray"
                     CaretBrush="LightGray"
                     BorderBrush="DarkGray"
                     BorderThickness="0,0,0,1"
-                    Height="28"
                     VerticalContentAlignment="Center"
-                    Margin="557,272,10,334"
+                    Margin="395,245,48,304"
                     Padding="20,0,0,0" Grid.Row="2" Width="NaN">
                     <TextBox.Background>
                         <ImageBrush 
@@ -340,11 +338,14 @@
                 </TextBox>
 
                 <DataGrid
+                    x:Name="dgvPCs"
+                    SelectionUnit="FullRow"
+                    SelectionChanged="dgvPCs_SelectionChanged"
                     Grid.Row="2" Margin="12,324,12,12"
                     d:ItemsSource="{d:SampleData ItemCount=5}">
                 </DataGrid>
-                <TextBox x:Name="btnAdminText"
-                    Text="Welcome Admin "
+                <TextBox x:Name="txtWelcome"
+                    Text="Welcome user"
                     FontSize="13"
                     FontWeight="Medium"
                     Foreground="DarkGray"
@@ -353,8 +354,8 @@
                     BorderThickness="0,0,0,1"
                     Height="28"
                     VerticalContentAlignment="Center"
-                    Margin="567,63,0,490"
-                    Padding="20,0,0,0" Grid.Row="2" >
+                    Margin="557,5,48,577"
+                    Padding="20,0,0,0" Grid.Row="1" Grid.RowSpan="2" >
                     <TextBox.Background>
                         <ImageBrush 
                             Stretch="None"
@@ -395,7 +396,7 @@
                             AlignmentX="Left"/>
                     </TextBox.Background>
                 </TextBox>
-                <TextBox x:Name="txtUsername_Copy1"
+                <TextBox x:Name="txtDesc"
                     FontSize="13"
                     FontWeight="Medium"
                     Foreground="White"
@@ -412,7 +413,7 @@
                             AlignmentX="Left"/>
                     </TextBox.Background>
                 </TextBox>
-                <TextBox x:Name="txtUsername_Copy2"
+                <TextBox x:Name="txtReview"
                     FontSize="13"
                     FontWeight="Medium"
                     Foreground="White"
@@ -421,7 +422,7 @@
                     BorderThickness="0,0,0,1"
                     Height="28"
                     VerticalContentAlignment="Center"
-                    Margin="111,127,395,426"
+                    Margin="111,129,395,424"
                     Padding="20,0,0,0" Grid.Row="2" Width="NaN">
                     <TextBox.Background>
                         <ImageBrush 
@@ -429,7 +430,7 @@
                             AlignmentX="Left"/>
                     </TextBox.Background>
                 </TextBox>
-                <ComboBox x:Name="txtUsername_Copy"
+                <TextBox x:Name="txtStatus"
                     FontSize="13"
                     FontWeight="Medium"
                     Foreground="White"
@@ -437,14 +438,14 @@
                     BorderThickness="0,0,0,1"
                     Height="28"
                     VerticalContentAlignment="Center"
-                    Margin="111,204,395,349"
+                    Margin="111,193,395,360"
                     Padding="20,0,0,0" Grid.Row="2" Width="NaN">
-                    <ComboBox.Background>
+                    <TextBox.Background>
                         <ImageBrush 
                             Stretch="None"
                             AlignmentX="Left"/>
-                    </ComboBox.Background>
-                </ComboBox>
+                    </TextBox.Background>
+                </TextBox>
             </Grid>
 
         </Border>

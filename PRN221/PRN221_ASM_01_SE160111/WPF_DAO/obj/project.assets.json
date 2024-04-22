@@ -2297,23 +2297,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\PEATEA\\.nuget\\packages\\": {},
-    "C:\\My Developer Tools\\Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\PC\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\PEATEA\\Desktop\\FPTU Code\\FPTU-Code-Assignments\\PRN221\\PRN221_ASM_01_SE160111\\WPF_DAO\\WPF_DAO.csproj",
+      "projectUniqueName": "C:\\Users\\PC\\Desktop\\FPT Code\\FPTU-Code-Assignments\\PRN221\\PRN221_ASM_01_SE160111\\WPF_DAO\\WPF_DAO.csproj",
       "projectName": "WPF_DAO",
-      "projectPath": "C:\\Users\\PEATEA\\Desktop\\FPTU Code\\FPTU-Code-Assignments\\PRN221\\PRN221_ASM_01_SE160111\\WPF_DAO\\WPF_DAO.csproj",
-      "packagesPath": "C:\\Users\\PEATEA\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\PEATEA\\Desktop\\FPTU Code\\FPTU-Code-Assignments\\PRN221\\PRN221_ASM_01_SE160111\\WPF_DAO\\obj\\",
+      "projectPath": "C:\\Users\\PC\\Desktop\\FPT Code\\FPTU-Code-Assignments\\PRN221\\PRN221_ASM_01_SE160111\\WPF_DAO\\WPF_DAO.csproj",
+      "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\PC\\Desktop\\FPT Code\\FPTU-Code-Assignments\\PRN221\\PRN221_ASM_01_SE160111\\WPF_DAO\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\My Developer Tools\\Visual Studio\\Shared\\NuGetPackages"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\PEATEA\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -2328,8 +2328,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\PEATEA\\Desktop\\FPTU Code\\FPTU-Code-Assignments\\PRN221\\PRN221_ASM_01_SE160111\\WPF_BO\\WPF_BO.csproj": {
-              "projectPath": "C:\\Users\\PEATEA\\Desktop\\FPTU Code\\FPTU-Code-Assignments\\PRN221\\PRN221_ASM_01_SE160111\\WPF_BO\\WPF_BO.csproj"
+            "C:\\Users\\PC\\Desktop\\FPT Code\\FPTU-Code-Assignments\\PRN221\\PRN221_ASM_01_SE160111\\WPF_BO\\WPF_BO.csproj": {
+              "projectPath": "C:\\Users\\PC\\Desktop\\FPT Code\\FPTU-Code-Assignments\\PRN221\\PRN221_ASM_01_SE160111\\WPF_BO\\WPF_BO.csproj"
             }
           }
         }
@@ -2359,7 +2359,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }

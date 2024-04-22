@@ -1,5 +1,5 @@
-﻿using WPF_BO.Models;
-using WPF_Repository;
+﻿using WPF_Repository;
+using WPF_BO;
 
 namespace WPF_Service
 {

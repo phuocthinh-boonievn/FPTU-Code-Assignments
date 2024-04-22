@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33530.505
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PRN221PE_SP24_TrialTest_NPPT", "PRN221PE_SP24_TrialTest_NPPT\PRN221PE_SP24_TrialTest_NPPT.csproj", "{B0AD36EC-3DAF-4BD9-AB23-DDA321E7E11D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PRN221PE_SP24_TrialTest_NPPT_Repository", "PRN221PE_SP24_TrialTest_NPPT_Repository\PRN221PE_SP24_TrialTest_NPPT_Repository.csproj", "{848BB73E-8272-46C0-BFC5-2A89D4FD4DD1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B0AD36EC-3DAF-4BD9-AB23-DDA321E7E11D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0AD36EC-3DAF-4BD9-AB23-DDA321E7E11D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0AD36EC-3DAF-4BD9-AB23-DDA321E7E11D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0AD36EC-3DAF-4BD9-AB23-DDA321E7E11D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{848BB73E-8272-46C0-BFC5-2A89D4FD4DD1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{848BB73E-8272-46C0-BFC5-2A89D4FD4DD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{848BB73E-8272-46C0-BFC5-2A89D4FD4DD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{848BB73E-8272-46C0-BFC5-2A89D4FD4DD1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0A7C2558-8DBB-4C58-BD0C-D90B62FE21E9}
+	EndGlobalSection
+EndGlobal

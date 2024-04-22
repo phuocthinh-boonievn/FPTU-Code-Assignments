@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\PEATEA\\Desktop\\FPTU Code\\FPTU-Code-Assignments\\PRN221\\WPF_Student_Mangement\\DemoWPFDAO\\DemoWPFDAO.csproj": {}
+    "C:\\Users\\PC\\Desktop\\FPT Code\\FPTU-Code-Assignments\\PRN221\\WPF_Student_Mangement\\DemoWPFDAO\\DemoWPFDAO.csproj": {}
   },
   "projects": {
-    "C:\\Users\\PEATEA\\Desktop\\FPTU Code\\FPTU-Code-Assignments\\PRN221\\WPF_Student_Mangement\\DemoWPFBO\\DemoWPFBO.csproj": {
+    "C:\\Users\\PC\\Desktop\\FPT Code\\FPTU-Code-Assignments\\PRN221\\WPF_Student_Mangement\\DemoWPFBO\\DemoWPFBO.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\PEATEA\\Desktop\\FPTU Code\\FPTU-Code-Assignments\\PRN221\\WPF_Student_Mangement\\DemoWPFBO\\DemoWPFBO.csproj",
+        "projectUniqueName": "C:\\Users\\PC\\Desktop\\FPT Code\\FPTU-Code-Assignments\\PRN221\\WPF_Student_Mangement\\DemoWPFBO\\DemoWPFBO.csproj",
         "projectName": "DemoWPFBO",
-        "projectPath": "C:\\Users\\PEATEA\\Desktop\\FPTU Code\\FPTU-Code-Assignments\\PRN221\\WPF_Student_Mangement\\DemoWPFBO\\DemoWPFBO.csproj",
-        "packagesPath": "C:\\Users\\PEATEA\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\PEATEA\\Desktop\\FPTU Code\\FPTU-Code-Assignments\\PRN221\\WPF_Student_Mangement\\DemoWPFBO\\obj\\",
+        "projectPath": "C:\\Users\\PC\\Desktop\\FPT Code\\FPTU-Code-Assignments\\PRN221\\WPF_Student_Mangement\\DemoWPFBO\\DemoWPFBO.csproj",
+        "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\PC\\Desktop\\FPT Code\\FPTU-Code-Assignments\\PRN221\\WPF_Student_Mangement\\DemoWPFBO\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\My Developer Tools\\Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\PEATEA\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -59,24 +59,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\PEATEA\\Desktop\\FPTU Code\\FPTU-Code-Assignments\\PRN221\\WPF_Student_Mangement\\DemoWPFDAO\\DemoWPFDAO.csproj": {
+    "C:\\Users\\PC\\Desktop\\FPT Code\\FPTU-Code-Assignments\\PRN221\\WPF_Student_Mangement\\DemoWPFDAO\\DemoWPFDAO.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\PEATEA\\Desktop\\FPTU Code\\FPTU-Code-Assignments\\PRN221\\WPF_Student_Mangement\\DemoWPFDAO\\DemoWPFDAO.csproj",
+        "projectUniqueName": "C:\\Users\\PC\\Desktop\\FPT Code\\FPTU-Code-Assignments\\PRN221\\WPF_Student_Mangement\\DemoWPFDAO\\DemoWPFDAO.csproj",
         "projectName": "DemoWPFDAO",
-        "projectPath": "C:\\Users\\PEATEA\\Desktop\\FPTU Code\\FPTU-Code-Assignments\\PRN221\\WPF_Student_Mangement\\DemoWPFDAO\\DemoWPFDAO.csproj",
-        "packagesPath": "C:\\Users\\PEATEA\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\PEATEA\\Desktop\\FPTU Code\\FPTU-Code-Assignments\\PRN221\\WPF_Student_Mangement\\DemoWPFDAO\\obj\\",
+        "projectPath": "C:\\Users\\PC\\Desktop\\FPT Code\\FPTU-Code-Assignments\\PRN221\\WPF_Student_Mangement\\DemoWPFDAO\\DemoWPFDAO.csproj",
+        "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\PC\\Desktop\\FPT Code\\FPTU-Code-Assignments\\PRN221\\WPF_Student_Mangement\\DemoWPFDAO\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\My Developer Tools\\Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\PEATEA\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -91,8 +91,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\PEATEA\\Desktop\\FPTU Code\\FPTU-Code-Assignments\\PRN221\\WPF_Student_Mangement\\DemoWPFBO\\DemoWPFBO.csproj": {
-                "projectPath": "C:\\Users\\PEATEA\\Desktop\\FPTU Code\\FPTU-Code-Assignments\\PRN221\\WPF_Student_Mangement\\DemoWPFBO\\DemoWPFBO.csproj"
+              "C:\\Users\\PC\\Desktop\\FPT Code\\FPTU-Code-Assignments\\PRN221\\WPF_Student_Mangement\\DemoWPFBO\\DemoWPFBO.csproj": {
+                "projectPath": "C:\\Users\\PC\\Desktop\\FPT Code\\FPTU-Code-Assignments\\PRN221\\WPF_Student_Mangement\\DemoWPFBO\\DemoWPFBO.csproj"
               }
             }
           }
@@ -122,7 +122,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }
